@@ -1,0 +1,178 @@
+% Harvard-Format Professional CV — Juan Pablo Saco Pachas
+% Compile with: xelatex cv-saco.tex
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts ---
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+
+% --- Colors ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.6em}{0.3em}
+
+% --- List Formatting ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+\pagestyle{empty}
+
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries Juan Pablo Saco Pachas} \\[4pt]
+  \faIcon{map-marker-alt}\enspace Brisbane, Australia
+  \quad\faIcon{envelope}\enspace \href{mailto:juanpablosaco@gmail.com}{juanpablosaco@gmail.com}
+  \quad\faIcon{phone}\enspace +61 410 330 850
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://linkedin.com/in/juan-pablo-saco-a2544737/}{linkedin.com/in/juan-pablo-saco}
+  \quad\faIcon{globe}\enspace \href{https://juan-pablo-saco.cofoundy.dev}{juan-pablo-saco.cofoundy.dev}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% EDUCATION
+% ============================================
+\section{Education}
+
+\entry{University of Queensland}{Brisbane, Australia}{Master of Environmental Management (Mining)}{2023}
+\begin{itemize}
+  \item Specialisation in sustainable resource management and mining environmental performance
+  \item Coursework in environmental impact assessment, risk analysis, and GIS applications
+\end{itemize}
+\vspace{0.3em}
+
+\entry{University of Lima}{Lima, Peru}{Bachelor of Industrial Engineering}{2008}
+\begin{itemize}
+  \item Foundation in process optimisation, supply chain management, and operations management
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% EXPERIENCE
+% ============================================
+\section{Experience}
+
+\entry{99 Bikes}{Brisbane, Australia}{Sales Consultant}{2020 -- Present}
+\begin{itemize}
+  \item Deliver tailored customer solutions by identifying needs and applying structured problem-solving
+  \item Build strong relationships with diverse stakeholders, enhancing communication and trust
+  \item Consistently achieve sales targets and contribute to store performance
+  \item Contribute to sustainability-focused retail initiatives
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Automotores Gildemeister}{Lima, Peru}{Brand Manager}{2011 -- 2017}
+\begin{itemize}
+  \item Managed product portfolio and coordinated directly with manufacturers to ensure monthly supply
+  \item Developed annual business plans and sales strategies based on market analysis
+  \item Achieved sales targets through pricing, positioning, and demand planning
+  \item Led new product launches and configuration of vehicle models aligned with market needs
+  \item Delivered training programs to national dealer network improving sales capability
+  \item Managed cross-functional projects involving logistics, sales, and operations
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Automotores Gildemeister}{Lima, Peru}{Warrants Supervisor}{2008 -- 2011}
+\begin{itemize}
+  \item Managed secured inventory (warrants) in coordination with financial institutions
+  \item Oversaw capital stock and debt exposure through guarantee structures
+  \item Coordinated logistics operations with customs and warehouse providers
+  \item Implemented process improvements in stock control and logistics efficiency
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Nestl\'e Per\'u}{Lima, Peru}{Supply Chain Trainee}{2006 -- 2007}
+\begin{itemize}
+  \item Monitored imports alongside logistics operators ensuring timely delivery
+  \item Developed stock control and coverage reports using spreadsheets
+  \item Supervised tolling and labelling processes ensuring compliance
+  \item Supported regulatory compliance with SENASA
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Luz del Sur}{Lima, Peru}{Commercial Department Trainee}{2006}
+\begin{itemize}
+  \item Managed customer service processes related to energy distribution
+  \item Recorded and followed up technical and commercial claims
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% PROJECTS
+% ============================================
+\section{Projects \& Achievements}
+
+\entry{Environmental Impact \& Risk Assessment}{University of Queensland}{Research Project}{2023}
+\begin{itemize}
+  \item Conducted environmental analysis aligned with Australian regulatory frameworks
+  \item Developed mitigation strategies for environmental risks in mining operations
+\end{itemize}
+\vspace{0.3em}
+
+\entry{GIS Environmental Analysis}{University of Queensland}{Research Project}{2023}
+\begin{itemize}
+  \item Applied GIS tools to analyse environmental data for evidence-based decision-making
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% LEADERSHIP
+% ============================================
+\section{Leadership \& Volunteer}
+
+\entry{Minkando}{Lima, Peru}{Project Coordinator}{2009 -- 2016}
+\begin{itemize}
+  \item Coordinated educational projects in vulnerable communities
+  \item Engaged stakeholders and supported sustainable project delivery
+\end{itemize}
+\vspace{0.3em}
+
+\entry{RSPCA Ipswich}{Queensland, Australia}{Volunteer}{2021 -- 2022}
+\begin{itemize}
+  \item Supported animal care and adoption processes
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% SKILLS
+% ============================================
+\section{Skills \& Additional}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Technical:} & Environmental Management \& Sustainability, Environmental Impact Assessment, Risk Analysis, Supply Chain \& Logistics Management, Process Improvement, Data Analysis, SAP, Microsoft Office, SPSS, AutoCAD, GIS \\
+\textbf{Languages:} & English (Fluent), Spanish (Native) \\
+\textbf{Interests:} & Sustainability, low-carbon future, community education, animal welfare \\
+\end{tabularx}
+
+\end{document}
