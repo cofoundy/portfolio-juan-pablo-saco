@@ -15,7 +15,11 @@ export interface IconInfo {
 const iconsDir = path.join(process.cwd(), "public", "icons");
 
 export function getIconInfo(name: string): IconInfo {
-  const key = name.toLowerCase().replace(/[\s./+#\-]+/g, "");
+  const key = name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // strip diacritics (é→e, ú→u, ñ→n)
+    .toLowerCase()
+    .replace(/[\s./+#\-]+/g, "");
 
   const candidates = [
     key,

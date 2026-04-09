@@ -3,6 +3,9 @@ export const siteConfig = {
   title: "Environmental Management Professional",
   description: "Environmental Management graduate specialising in sustainable resource management and environmental performance in the mining sector. Based in Brisbane, Australia.",
 
+  // Profile photo — set to "/profile.png" when available (place file in public/)
+  profileImage: "",
+
   // 2-color system: accent (deep teal — environmental/corporate) + highlight (vibrant teal — sustainability)
   accentColor: "#0F4C5C",
   highlightColor: "#14919B",

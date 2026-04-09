@@ -1,0 +1,3017 @@
+
+<!DOCTYPE html>
+<html class="loading bordered-layout" lang="en" data-layout="bordered-layout" data-textdirection="ltr">
+
+<head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P8NPXNLW');</script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="icon" type="image/x-icon" href="/es/favicon.ico">
+    <meta property="og:title" content="Luz del Sur">
+    <meta property="og:image" content="https://www.luzdelsur.pe/es/assets/img/ldsredes.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Luz del Sur</title>
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" type="text/css" href="/es/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/es/assets/css/bootstrap-extended.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .roboto-direccion {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+    </style>
+
+    <script src="/es/assets/js/core.min.js"></script>
+    <script src="/es/assets/js/md5.min.js"></script>
+
+
+    <script type="text/javascript" src="/es/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/es/Scripts/MetodosGenericos.js"></script>
+    <script type="text/javascript" src="/es/assets/js/function.js"></script>
+    <script type="text/javascript" src="/es/assets/js/sweetalert2@11.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqIO9sdQEhoT8UIUE54rjB4GvxWc7FGDk&libraries=places"></script>
+    <script src="https://flex.alignet.io/flex-payment-forms.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://flex.alignet.io/main-flex-payment-forms.css" />
+
+    
+    
+
+
+</head>
+
+<script>
+    var keyMaps = 'AIzaSyCqIO9sdQEhoT8UIUE54rjB4GvxWc7FGDk';
+    //window.dataLayer = window.dataLayer || [];
+    //function gtag() { dataLayer.push(arguments); }
+    //gtag('js', new Date());
+
+    //gtag('config', 'G-RKQ063KSJL');
+
+    // ThumbmarkJS.getFingerprint().then(
+    //     function(fp) {
+    //         console.log(fp);
+    //         sessionStorage.setItem("fp", fp);
+    //         console.log(sessionStorage.getItem("fp"));
+    //     });
+</script>
+
+<body>
+
+    <div class="modal fade" id="modal-aceptacion-politica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content" style="background: #F0F8FD;">
+            <div class="modal-body  br-16">
+                <div class="text-center">
+                    <br/>
+                    <p class="font-16 grey">Al hacer click en <b>continuar</b> estás aceptando la política de tratamiento de datos personales.</p>
+                    <a href="https://www.luzdelsur.com.pe/uploads/shares/PDFs/politicageneraltratamientodatospersonales.pdf" target="_blank"><p class="font-16 azul"><b>Leer condiciones y política</b></p></a>
+                </div>
+                <div class="d-grid gap-1 mt-24 mb-32 text-center">
+                    <button type="button" class="default-btn pt-16 pb-16 br-24 pl-48 pr-48 ml-0 mt-sm-12 mt-24 button-naranja bg-amarillo2 azul font-16 font-weight-600 border-0 w-100 text-center" data-dismiss="modal" onclick="AbreChat();">Continuar</button>
+                    <button type="button" class="btn br-88 d-block font-16 font-weight-600 d-flex align-items-center justify-content-center azul" style="border: 2px solid #263184; height: 55px;" id="btnNoSalirPolitica">No acepto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" id="modal-chat-no-acepta-politica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content" style="background: #F0F8FD;">
+            <div class="modal-body  br-16">
+                <div class="">
+                    <br/>
+                    <p class="font-16 grey" style="text-align:justify">
+                        Para poder gestionar tu atención y ofrecerte una solución relacionada con el servicio que tienes contratado con nosotros, te informamos que necesitaremos tratar determinados datos personales, los mismos que serán requeridos a través de este canal de comunicación y se almacenarán en nuestro banco de datos durante el plazo que dicho tratamiento sea requerido.
+                        <br/>De requerir mayor información sobre el tratamiento de tus datos, te invitamos a ingresar a nuestra página web www.luzdelsur.pe.
+                    </p>
+                </div>
+                <div class="d-grid gap-1 mt-24 mb-32 text-center">
+                    <button type="button" class="default-btn pt-16 pb-16 br-24 pl-48 pr-48 ml-0 mt-sm-12 mt-24 button-naranja bg-amarillo2 azul font-16 font-weight-600 border-0 w-100 text-center" data-dismiss="modal" onclick="AbreChat();">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript b-dz3jthkxle>
+        <iframe b-dz3jthkxle src="https://www.googletagmanager.com/ns.html?id=GTM-P8NPXNLW"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+<div class="modal fade" id="Validar_Propietario" tabindex="-1" aria-labelledby="como-ingresar-lectura" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-32 bg-celeste-claro br-16">
+                <div class="text-center">
+                    <img src="/es/assets/img/green-check.png">
+                </div>
+
+                <h3 class="font-weight-bold font-20 mt-24" id="txtNopropietario"></h3>
+                <p class="font-16" id="txtmensajeUsuario">
+                </p>
+
+                <hr class="bg-azul">
+
+                <span class="font-weight-bold font-20">O...</span><br>
+
+                <p class="font-16 m-0 mt-0">¿Eres el titular / propietario y no está actualizado tu nombre?</p>
+
+                <button type="button" class="btn br-24 pt-12 pb-12 font-16 font-weight-bold pl-sm-80 pr-sm-80
+                                                                             mt-24 mt-sm-20 w-100" id="btn-chatear-aqui">
+                    Solicitar cambio de nombre
+                    del propietario / titular
+                </button>
+
+                <p class="font-16 mt-24">(Puedes hacer esta solicitud en la web en cualquier momento si lo deseas)</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="geo_info_correcta" tabindex="-1" aria-labelledby="como-ingresar-lectura" style="padding-right: 0px; display: none; z-index: 99999;" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body p-32 bg-celeste-claro br-16">
+
+                <h1 class="font-weight-bold font-20">Política Tratamiento de Datos Personales</h1>
+                <p class="font-16">
+                    A continuación, detallamos nuestra política de Tratamiento de Datos Personales, la misma que invitamos a revisarla.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    1.	OBJETIVO
+
+                </h2>
+                <p>
+                    La presente Política pone en conocimiento los lineamientos generales bajo los cuales Luz del Sur realiza el tratamiento de datos personales que recopila;
+                    la finalidad para la que lo hace; así como los procedimientos para que los titulares de estos puedan ejercer los derechos de acceso,
+                    rectificación, cancelación y oposición previstos en la normativa en materia de protección de datos personales.
+                </p>
+
+                <h2 class="font-weight-bold font-20">
+                    2.	PRINCIPIOS RECTORES
+
+                </h2>
+
+                <p>Luz del Sur tiene conocimiento de la importancia del derecho fundamental a la protección de datos personales, por lo que respeta los principios rectores establecidos en la normativa en materia de protección de datos personales. Estos son, principalmente, el principio de legalidad, el principio de consentimiento, el principio de finalidad, el principio de proporcionalidad, el principio de calidad, el principio de seguridad y el principio de nivel de protección adecuado.</p>
+
+                <p class="font-14">
+                    <strong>2.1.</strong> En línea con el  <span style="text-decoration: underline;">principio de legalidad</span>, Luz del Sur realizará el tratamiento de los datos personales conforme a lo establecido en la legislación aplicable.
+                </p>
+                <p class="font-14">
+                    <strong>2.2.</strong> Conforme al <span style="text-decoration: underline;">principio de consentimiento</span>, Luz del Sur realizará el tratamiento de datos personales cuando el titular del dato personal hubiera prestado su consentimiento libre, previo, expreso, informado e inequívoco; o en los casos en que, de acuerdo a la legislación aplicable, no se requiera dicho consentimiento.
+                </p>
+                <p class="font-14">
+                    <strong>2.3.</strong> De acuerdo al <span style="text-decoration: underline;">principio de finalidad</span>, Luz del Sur realizará el tratamiento de datos personales para una finalidad determinada, explícita y lícita. Dicho tratamiento no se extenderá a una finalidad distinta, excluyendo los casos de actividades de valor histórico, estadístico o científico, o cuando se utilice un procedimiento de disociación o anonimización conforme a la legislación aplicable.
+                </p>
+                <p class="font-14">
+                    <strong>2.4.</strong> En línea con el <span style="text-decoration: underline">principio de proporcionalidad</span>, el tratamiento de datos personales que realizará Luz del Sur será adecuado, relevante y no excesivo a la finalidad para la que estos hubiesen sido recopilados.
+                </p>
+                <p class="font-14">
+                    <strong>2.5.</strong> Conforme al <span style="text-decoration: underline">principio de calidad</span>, los datos personales tratados por Luz del Sur serán veraces, exactos y, en la medida de lo posible, actualizados, necesarios, pertinentes y adecuados respecto de la finalidad para la que fueron recopilados. De igual forma, serán conservados conforme a la legislación aplicable.
+                </p>
+                <p class="font-14">
+                    <strong>2.6.</strong> De acuerdo al <span style="text-decoration: underline">principio de seguridad</span>, Luz del Sur y los encargados de tratamiento de datos personales que designe adoptarán las medidas técnicas, organizativas y legales necesarias para garantizar la seguridad de los datos personales.
+
+                </p>
+                <p class="font-14">
+                    <strong>2.7.</strong> En línea con el <span style="text-decoration: underline">principio de nivel de protección adecuado</span>, en caso de flujo transfronterizo de datos personales, Luz del Sur garantizará un nivel suficiente de protección para los datos personales que se vayan a tratar o, por lo menos, equiparable a lo previsto por la legislación aplicable o por los estándares internacionales en la materia.
+                </p>
+
+                <h2 class="font-weight-bold font-20">
+                    3.	DIRECTRICES
+
+                </h2>
+
+                <h3 class="font-weight-bold font-20">
+                    3.1.	DATOS PERSONALES TRATADOS POR LUZ DEL SUR
+                </h3>
+
+
+                <p>
+                    Para la prestación de los servicios que brinda Luz del Sur, así como para las finalidades establecidas en la presente Política, Luz del Sur requerirá recopilar y tratar diversos datos personales de las personas que se señalan en la presente sección, quienes a su vez aceptan proporcionar todos los datos personales que les sean requeridos por Luz del Sur, incluyendo pero sin limitarse a los siguientes: (i) nombres y apellidos, (ii) número y tipo de documento de identidad, (iii) número de Registro Único de Contribuyente, (iv) dirección de domicilio, (v) dirección de correo electrónico, (vi) número de teléfono (fijo y/o móvil), (vii) fecha de nacimiento, (viii) imagen, y, cualquier dato de carácter identificativo, personal, económico, financiero y/o de seguros, social, de naturaleza sensible, y, en general, todos aquellos datos, información, operaciones y referencias a los que Luz del Sur pudiera acceder en el curso normal de sus actividades y/o en base a la relación comercial, contractual y/o jurídica (mediante cualquier canal, tales como canal presencial, contact center, aplicativos móviles, página web, correo electrónico, etc.), ya sea por haber sido proporcionados a Luz del Sur o por haberlos conseguido Luz del Sur de otro modo lícito, y que pudieran calificar como datos personales conforme a la legislación aplicable.
+                    <br><br>
+                    De igual forma, las personas mencionadas en esta sección, conocen que, de conformidad con el artículo 14.5 de la Ley de Protección de Datos Personales, no se requiere su consentimiento para que Luz del Sur pueda realizar el tratamiento de los datos personales que sean necesarios para la preparación, celebración y ejecución de la relación contractual y/o jurídica que tienen con Luz del Sur.
+                    <br><br>
+                    En línea con lo anterior, Luz del Sur, como parte de sus actividades y para las finalidades señaladas en la presente Política, recopila y trata los datos personales de las siguientes personas, los cuales son almacenados en los correspondientes bancos de datos del Registro Nacional de Protección de Datos Personales de conformidad con la legislación aplicable:
+                    <br><br>
+                </p>
+                <div class="row justify-content-center ">
+
+                    <div class="col-lg-5">
+                        <ul class="font-16  ">
+                            <li>Clientes</li>
+                            <li>Potenciales Clientes</li>
+                            <li>Colaboradores</li>
+                            <li>Postulantes</li>
+                            <li>Accionistas</li>
+                            <li>Proveedores</li>
+                            <li>Visitantes</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="font-16 ">
+                            <li>Videovigilancia</li>
+                            <li>Responsabilidad social y eventos institucionales</li>
+                            <li>Atención de Reclamos y Canales de Denuncias</li>
+                            <li>Personas que acceden a documentos de Luz del Sur</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <h3 class="font-weight-bold font-20">
+                    3.2. FINALIDAD DEL TRATAMIENTO DE LOS DATOS PERSONALES
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de los datos personales recopilados de las personas que se mencionan en la presente sección. En línea con ello, es importante mencionar que las listas que se mencionan a continuación no son taxativas, sino meramente enunciativas y abordan las principales finalidades del tratamiento de datos personales, ya que en general, el tratamiento de los datos personales de las personas que se mencionan en la presente sección, también estarán relacionados a la prestación del servicio público de electricidad que brinda Luz del Sur, así como al cumplimiento de la legislación aplicable, incluyendo la entrega de información exigida por las autoridades reguladoras y supervisoras de Luz del Sur:
+                </p>
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.1. </strong><span style="text-decoration: underline">Datos personales de clientes</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de datos personales de sus clientes, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Fines del negocio en general</li>
+                    <li>Gestión comercial y servicio al cliente</li>
+                    <li>Gestión contable de clientes y seguimiento del cumplimiento de obligaciones dinerarias (facturación, pagos, cobranzas), así como de otros asuntos relacionados con la prestación del servicio que brinda Luz del Sur.</li>
+                    <li>Envío de notificaciones en ejecución de o vinculadas con, los servicios que presta Luz del Sur, incluyendo, el servicio de recibo digital, en caso el cliente se haya afiliado a este servicio.</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Análisis de perfiles.</li>
+                    <li>Devolución de pagos indebidos, presupuestos anulados y demás.</li>
+                    <li>Encuestas (telefónicas, por mensaje de texto, por correo electrónico, en persona u otros medios) que evalúen el comportamiento del cliente y/o la calidad de los productos y/o servicios (incluyendo de los canales de contacto) brindados por Luz del Sur.</li>
+                    <li>Fines promocionales del negocio, lo cual incluye la preparación del contenido a ser publicitado en diferentes medios.</li>
+                </ol>
+
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.2. </strong><span style="text-decoration: underline;">Datos personales de potenciales clientes</span>
+                </h3>
+                <p>Luz del Sur realiza el tratamiento de datos personales de sus potenciales clientes, entre otros, para los siguientes fines:</p>
+
+
+                <ol class="font-16 ">
+                    <li>Fines del negocio en general</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Análisis de perfiles.</li>
+                    <li>Fines promocionales del negocio, lo cual incluye la preparación del contenido a ser publicitado en diferentes medios</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.3. </strong><span style="text-decoration: underline;">Datos personales de los colaboradores </span>
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de datos personales de sus colaboradores (trabajadores y practicantes), entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Fines del negocio en general.</li>
+                    <li>Recopilación y clasificación de información de los colaboradores y de sus familiares para la gestión de recursos humanos y de procesos internos relativos a seguros y protección familiar ante instituciones públicas y privadas.</li>
+                    <li>Cumplimiento de la ley aplicable en materia laboral, tributaria y previsional.</li>
+                    <li>Inicio, ejecución, modificación o terminación de la relación laboral existente entre Luz del Sur y sus colaboradores.</li>
+                    <li>Realización de actividades o la entrega de prestaciones a los colaboradores o sus familias para mejorar el clima laboral, el registro fílmico o fotográfico de ellos y la difusión en medios de comunicación internos de la empresa.</li>
+                    <li>Prevención de riesgos laborales.</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Actividades asociativas, culturales, recreativas y deportivas.</li>
+                    <li>Gestión de listas de miembros de sindicatos.</li>
+                    <li>Evaluaciones médicas ocupacionales, para generar historia clínica ocupacional y proceder con la evaluación correspondiente. Asimismo, para fines de llevar un reporte de accidentes ocurridos en la operación de la corporación, para tener una base de datos de incidentes fatales o peligrosos, así como para capacitaciones y eventos relacionados.</li>
+                    <li>Pago de las remuneraciones.</li>
+                    <li>Fines promocionales del negocio, lo cual incluye la preparación del contenido a ser publicitado en diferentes medios.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.4. </strong><span style="text-decoration: underline;">Datos personales de postulantes</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de datos personales de postulantes, entre otros, para los siguientes fines:
+                </p>
+                <ol class="font-16 ">
+                    <li>Fines del negocio en general.</li>
+                    <li>Evaluación de aptitudes para iniciar una relación laboral y/o modalidad formativa con Luz del Sur.</li>
+                    <li>Gestión de los procesos de selección.</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Análisis de perfiles para potenciales contrataciones.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.5. </strong><span style="text-decoration: underline;"> Datos personales de accionistas</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de datos personales de sus accionistas, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Cumplimiento de las disposiciones legales aplicables y ejecutar las estipulaciones del estatuto de Luz del Sur o de los convenios de accionistas que le sean comunicado.</li>
+                    <li>Registro de Libro Matrícula de Acciones y realización de Juntas Generales de Accionistas.</li>
+                    <li>Pago de dividendos.</li>
+                    <li>Fines promocionales del negocio, lo cual incluye la preparación del contenido a ser publicitado en diferentes medios.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.6. </strong><span style="text-decoration: underline;">Datos personales de proveedores</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de datos personales de sus accionistas, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Fines del negocio en general.</li>
+                    <li>Para su registro e identificación, a fin de permitir el ingreso a las instalaciones de Luz del Sur.</li>
+                    <li>Prevención de riesgos laborales.</li>
+                    <li>Gestión comercial y/o de listas de proveedores.</li>
+                    <li>Seguridad y control de acceso a instalaciones de Luz del Sur.</li>
+                    <li>Información para el pago de los servicios brindados.</li>
+                    <li>Fines promocionales del negocio, lo cual incluye la preparación del contenido a ser publicitado en diferentes medios.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.7. </strong><span style="text-decoration: underline;">Datos personales de visitantes</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza el tratamiento de datos personales de los visitantes que acceden a sus instalaciones, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Identificar la finalidad de la visita por medidas de seguridad.</li>
+                    <li>Seguridad, gestión, administración y control de acceso a instalaciones de Luz del Sur.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.8. </strong><span style="text-decoration: underline;">Datos personales de videovigilancia</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza tratamiento de datos personales de videovigilancia, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Identificación de las personas que ingresan a las instalaciones de Luz del Sur por medidas de seguridad.</li>
+                    <li>Seguridad, gestión, administración y control de acceso a instalaciones de Luz del Sur.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.9. </strong><span style="text-decoration: underline;">Datos personales de responsabilidad social y eventos institucionales</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza tratamiento de datos personales de responsabilidad social y eventos institucionales, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Actividades asociativas, culturales.</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Auspicios y donaciones.</li>
+                    <li>Apoyo social.</li>
+                    <li>Iniciativas de responsabilidad social empresarial.</li>
+                    <li>Programas de desarrollo.</li>
+                    <li>Uso de imagen en medios de difusión.</li>
+                    <li>Para la ejecución de eventos institucionales en Luz del Sur.</li>
+                    <li>Fines promocionales del negocio, lo cual incluye la preparación del contenido a ser publicitado en diferentes medios.</li>
+                </ol>
+
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.10. </strong><span style="text-decoration: underline;">Datos personales de Atención de Reclamos y Canales de Denuncias</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza tratamiento de datos personales de atención de reclamos y canales de denuncias, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Para gestionar la atención, evaluación y pronta respuesta de las denuncias (en caso sea una denuncia no anónima), reclamos y/u observaciones recibidas.</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Gestión de atención de reclamos.</li>
+                    <li>Atención de los canales de denuncias de Luz del Sur.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    <strong>3.2.11. </strong><span style="text-decoration: underline;">Datos personales de personas que acceden a documentos de Luz del Sur</span>
+                </h3>
+                <p>
+                    Luz del Sur realiza tratamiento de datos personales de las personas que acceden a documentos de Luz del Sur, entre otros, para los siguientes fines:
+                </p>
+
+                <ol class="font-16 ">
+                    <li>Registro de los usuarios de la página web de Luz del Sur para poder tener acceso a revisión de documentos.</li>
+                    <li>Fines estadísticos, históricos o científicos.</li>
+                    <li>Publicidad y prospección comercial.</li>
+                </ol>
+
+
+                <h3 class="font-weight-bold font-20">
+                    3.3. TRANSFERENCIA Y ENCARGO DE DATOS PERSONALES
+                </h3>
+                <p>
+                    Luz del Sur, como titular del banco de datos personales, podrá entregar los datos personales a empresas proveedoras de servicios que involucren tratamiento de datos personales, ubicadas en el Perú o en el extranjero, quienes actuarán en calidad de encargados del tratamiento de dichos datos personales cumpliendo con lo establecido en la Ley de Protección de Datos Personales y su Reglamento. A su vez, estas empresas podrán subcontratar a otros encargados de tratamiento, de conformidad con la Ley de Protección de Datos Personales. Las empresas realizarán el tratamiento de los datos personales con las finalidades indicadas en la sección 3.2. anterior.
+                    <br><br>
+                    Algunos encargados de tratamiento de sus datos personales podrán ser aquellos proveedores mencionados en el siguiente enlace:
+                    <a href="https://www.luzdelsur.com.pe/uploads/shares/PDF/LDS/Proveedores_datos_personales.pdf" target="_blank" rel="noopener">https://www.luzdelsur.com.pe/uploads/shares/PDF/LDS/Proveedores_datos_personales.pdf.</a>
+                    Estos encargados podrán ejecutar el tratamiento de los datos personales que reciban con las finalidades contenidas en la sección 3.2. anterior. Luz del Sur podrá designar y contratar en cualquier momento a otros encargados de tratamiento, ubicados en el Perú o en el extranjero.
+                    Los datos personales proporcionados no serán divulgados ni cedidos o compartidos con terceros no incluidos en la presente Política, sin su consentimiento previo y expreso, salvo que estos datos sean exigidos por la legislación vigente, orden judicial o una autoridad competente.
+                    <br><br>
+                    En caso de que Luz del Sur realice un flujo transfronterizo de los datos personales, el país de destino deberá tener niveles de protección adecuados. En caso contrario, mediante el presente documento, Luz del Sur garantiza que los datos personales se tratarán en el país de destino de conformidad con la legislación aplicable.
+                    <br><br>
+                    Asimismo, Luz del Sur entregará los datos personales recopilados y/o tratados a las autoridades públicas competentes que los requieran por escrito o a quienes deba entregarse la información de acuerdo a la legislación aplicable, incluyendo Policía Nacional, Ministerio Público, programas sociales, administración tributaria, autoridades reguladoras y supervisoras de Luz del Sur, entre otras que estén facultadas a hacer dicho requerimiento.
+                </p>
+
+                <h3 class="font-weight-bold font-20">
+                    3.4. AUTORIZACIÓN PARA LA OBTENCIÓN Y ACTUALIZACIÓN DE DATOS PERSONALES DE FUENTES PÚBLICAS Y/O AUTORIZADAS.
+                </h3>
+                <p>
+                    El titular de los datos personales autoriza a Luz del Sur a tratar sus datos personales obtenidos de fuentes públicas, gratuitas o no, o de fuentes no públicas, siempre que dichas fuentes cuenten con su autorización para tratar y transferir dichos datos personales. Los datos personales recabados podrán ser tratados y transferidos cumpliendo lo establecido en la presente Política.
+                </p>
+
+                <h3 class="font-weight-bold font-20">
+                    3.5. DERECHOS DE LOS TITULARES
+                </h3>
+                <p>
+                    Los titulares de datos personales tienen fundamentalmente los siguientes derechos: derecho de acceso e información; derecho de rectificación, actualización e inclusión; derecho de cancelación o supresión; y, derecho de oposición.
+                </p>
+
+                <ol class="font-16 ">
+                    <li><strong>Derecho de acceso e información:</strong> El titular de datos personales tiene derecho a obtener la información que sobre sí mismo sea objeto de tratamiento en bancos de datos de titularidad de Luz del Sur.</li>
+                    <li><strong>Derecho de rectificación, actualización e inclusión:</strong> Fines estadísticos, históricos o científicos.</li>
+                    <li><strong>Derecho de cancelación o supresión:</strong>El titular de datos personales podrá solicitar la cancelación o supresión de sus datos personales cuando estos hayan dejado de ser necesarios o pertinentes para la finalidad para la cual hayan sido recopilados, cuando hubiere vencido el plazo para su tratamiento, o cuando el titular hubiera revocado su consentimiento para el tratamiento.</li>
+                    <li><strong>Derecho de oposición:</strong> El titular de datos personales puede oponerse al tratamiento de sus datos personales en cualquier momento. La oposición procederá en la medida que el tratamiento no tenga justificación contractual o legal.</li>
+                </ol>
+
+                <h3 class="font-weight-bold font-20">
+                    3.6. PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS DEL TITULAR DE LOS DATOS PERSONALES
+                </h3>
+                <p>
+                    Los titulares de los datos personales podrán ejercer sus derechos y realizar los procedimientos establecidos en este documento, enviando su solicitud y/o consultas a:
+                    <br><br>
+                    Correo electrónico: central@luzdelsur.com.pe
+                    <br><br>
+                    Dirección: Av. Canaval y Moreyra 380, San Isidro, Lima
+                    <br><br>
+                    Teléfono: 271-9000
+                    <br><br>
+                    Al fin de ejercer los derechos antes mencionados, el titular de los datos personales deberá enviar a la dirección o correo electrónico señalados previamente la solicitud respectiva en los términos que establece el Reglamento (incluyendo: nombre del titular del dato personal y domicilio u otro medio para recibir respuesta; documentos que acrediten su identidad o la representación legal; descripción clara y precisa de los datos respecto de los que busca ejercer sus derechos y otros elementos o documentos que faciliten la localización de los datos).
+                    <br><br>
+                    De considerar el titular de los datos personales que no ha sido atendido en el ejercicio de sus derechos, éste puede proceder de acuerdo a lo establecido en la legislación aplicable.
+                </p>
+
+                <h3 class="font-weight-bold font-20">
+                    3.7. TIEMPO DE CONSERVACIÓN DE LOS DATOS PERSONALES
+                </h3>
+
+                <strong>3.7.1. <span style="text-decoration: underline;"> Datos personales de clientes</span></strong>
+                <p>
+                    Los datos personales serán conservados por el periodo en que Luz del Sur mantenga una relación contractual con el respectivo cliente y después de este por un plazo indeterminado por cuanto tales datos pueden ser necesarios para que Luz del Sur ejerza sus derechos. Sin embargo, una vez terminada la relación contractual, el cliente podrá solicitar a Luz del Sur la eliminación de tales datos personales. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.2. <span style="text-decoration: underline;"> Datos personales de potenciales clientes</span></strong>
+                <p>
+                    Los datos personales serán conservados por un plazo de diez (10) años. Sin embargo, el potencial cliente podrá solicitar a Luz del Sur la eliminación de tales datos personales en cualquier momento. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.3. <span style="text-decoration: underline;"> Datos personales de colaboradores</span></strong>
+                <p>
+                    Los datos personales serán conservados durante la vigencia de la relación laboral y/o de modalidades formativas y después de esta por un plazo indeterminado, por cuanto tales datos personales pueden ser necesarios para que Luz del Sur ejerza derechos vinculados con la relación laboral y/o de modalidades formativas. Sin embargo, una vez concluida la relación laboral y/o de modalidades formativas, el colaborador podrá solicitar a Luz del Sur la eliminación de tales datos personales. En tal caso, Luz del Sur podrá acceder a la petición del colaborador, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.4. <span style="text-decoration: underline;"> Datos personales de postulantes</span></strong>
+
+                <p>
+                    Los datos personales serán conservados durante la vigencia de la relación laboral y/o de modalidades formativas y después de esta por un plazo indeterminado, por cuanto tales datos personales pueden ser necesarios para que Luz del Sur ejerza derechos vinculados con la relación laboral y/o de modalidades formativas. Sin embargo, una vez concluida la relación laboral y/o de modalidades formativas, el colaborador podrá solicitar a Luz del Sur la eliminación de tales datos personales. En tal caso, Luz del Sur podrá acceder a la petición del colaborador, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.5. <span style="text-decoration: underline;"> Datos personales de accionistas</span></strong>
+
+                <p>
+                    Los datos personales serán conservados por el periodo en que los accionistas conserven dicha calidad y después de este por un plazo indeterminado por cuanto tales datos personales pueden ser necesarios para que Luz del Sur ejerza sus derechos. Sin embargo, una vez en que los accionistas dejen de serlo, podrán solicitar a Luz del Sur la eliminación de tales datos personales. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.6. <span style="text-decoration: underline;"> Datos personales de proveedores</span></strong>
+
+                <p>
+                    Los datos personales serán conservados por el periodo en que Luz del Sur mantenga una relación contractual con el respectivo proveedor y después de este por un plazo indeterminado por cuanto tales datos personales pueden ser necesarios para que Luz del Sur ejerza sus derechos. Sin embargo, una vez terminada la relación contractual, el proveedor podrá solicitar a Luz del Sur la eliminación de tales datos personales. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.7. <span style="text-decoration: underline;"> Datos personales de visitantes</span></strong>
+
+                <p>
+                    Los datos personales se conservarán por un período máximo de diez (10) años. Transcurrido el plazo de conservación referido anteriormente, y no habiendo requerimiento de alguna autoridad competente para entregar o visualizar el registro de visitantes, se procederá a la eliminación de los archivos.
+                </p>
+
+                <strong>3.7.8. <span style="text-decoration: underline;">  Datos personales de Videovigilancia</span></strong>
+
+                <p>
+                    Los datos personales se conservarán por un período máximo de sesenta (60) días hábiles. Transcurrido el plazo de conservación referido anteriormente, y no habiendo requerimiento de alguna autoridad competente para entregar o visualizar el contenido de la grabación, se procederá a la eliminación de los archivos, conforme a la normativa sobre la materia.
+                </p>
+
+                <strong>3.7.9. <span style="text-decoration: underline;"> Datos personales de responsabilidad social y eventos institucionales</span></strong>
+
+                <p>
+                    Los datos personales serán conservados por un plazo de diez (10) años. Sin embargo, las personas cuyos datos personales pertenezcan a este banco de datos podrán solicitar a Luz del Sur la eliminación de tales datos personales en cualquier momento. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.10. <span style="text-decoration: underline;"> Datos personales de atención de reclamos y canal de denuncias</span></strong>
+
+                <p>
+                    Los datos personales serán conservados por un plazo de diez (10) años. Sin embargo, las personas cuyos datos personales pertenezcan a este banco de datos personales podrán solicitar a Luz del Sur la eliminación de tales datos personales en cualquier momento. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <strong>3.7.11. <span style="text-decoration: underline;"> Datos personales de Personas que Acceden a Documentos de Luz del Sur</span></strong>
+
+                <p>
+                    Los datos personales serán conservados por un plazo de diez (10) años. Sin embargo, las personas cuyos datos personales pertenezcan a este banco de datos personales podrán solicitar a Luz del Sur la eliminación de tales datos personales en cualquier momento. En tal caso, Luz del Sur podrá acceder a la petición, siempre que considere que ello no afectará en el futuro los derechos u obligaciones de Luz del Sur.
+                </p>
+
+                <h2 class="font-weight-bold font-20">
+                    4.	SEGURIDAD
+
+                </h2>
+                <p>
+                    Luz del Sur será responsable de los bancos de datos personales de su titularidad y de los datos personales contenidos en estos. Con el objeto de evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos personales o información confidencial, Luz del Sur adopta los niveles de seguridad y de protección de datos personales legalmente requeridos, y ha instalado los medios y medidas técnicas a su alcance.
+                </p>
+
+                <h2 class="font-weight-bold font-20">
+                    5.	MODIFICACIONES
+
+                </h2>
+                <p>
+                    Luz del Sur se reserva el derecho de poder modificar y/o actualizar la presente Política en cualquier momento, ya sea por cambios en la legislación aplicable, cambios en la jurisprudencia aplicable, razones empresariales, políticas internas y/o por cualquier otro motivo. De producirse cualquier modificación y/o actualización de la presente Política, el texto vigente será puesto en conocimiento a través del portal web de Luz del Sur <a href="https://www.luzdelsur.com.pe/es" target="_blank" rel="noopener">(https://www.luzdelsur.com.pe/es)</a>, por lo que se les recomienda revisar dicho portal web periódicamente.
+                </p>
+                <div class="text-center">
+                    <button type="button" class=" pt-12 pb-12 br-24 pl-16 pr-16 mt-sm-12 mt-sm-20 font-16 font-weight-600 button-naranja bg-amarillo2 azul border-0 w-fit mt-24" data-dismiss="modal" id="btnAceptarTerminosyCondiciones">He leído y acepto los términos y condiciones</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("geo_info_correcta");
+        let eventDispatched = false;
+
+        const observer = new MutationObserver(() => {
+            const isVisible = modal.classList.contains("show") && getComputedStyle(modal).display === "block";
+
+            if (isVisible && !eventDispatched) {
+                eventDispatched = true;
+
+               var dataLayer = window.dataLayer = window.dataLayer || [];
+                dataLayer.push({
+                    event: 'view_promotion',
+                    TipoEvento: 'visualización',
+                    TipoElemento: 'Pop Up',
+                    Flujo: 'Política Tratamiento de Datos Personales',
+                    TipoAcceso: 'geo_info_correcta',
+                    Zona: 'Política Tratamiento de Datos Personales',
+                    SubZona: 'Consulte aquí nuestra política de datos',
+                    CTA: undefined,
+                    page_title: 'Tratamiento Datos Personales - ingreso'
+                });
+            }
+        });
+
+        observer.observe(modal, {
+            attributes: true,
+            attributeFilter: ['class', 'style'],
+            subtree: false
+        });
+
+        $("#btnAceptarTerminosyCondiciones").on("click", function () {
+            var dataLayer = window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                event: 'select_promotion',
+                TipoEvento: 'Interacci\u00F3n',
+                TipoElemento: 'Pop Up',
+                Flujo: 'Política Tratamiento de Datos Personales',
+                TipoAcceso: 'btnAceptarTerminosyCondiciones',
+                Zona: 'Política Tratamiento de Datos Personales',
+                SubZona: 'Consulte aquí nuestra política de datos',
+                CTA: 'He leído y acepto los términos y condiciones',
+                page_title: 'Tratamiento Datos Personales - lectura',
+            });
+        });
+    });
+</script>
+
+<div class="modal fade" id="login_info_guardada" tabindex="-1" aria-labelledby="geo_reniec" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg br-16 overflow-hidden">
+        <div class="modal-content">
+
+            <div class="container">
+                <div class="row justify-content-md-center pt-48 pb-48 bg-grad-amarillo" id="header-logo">
+                    <div class="col col-lg-12 text-center">
+                        <img src="/es/assets/img/logo-lds.png" id="logo" alt="" srcset="">
+                    </div>
+                </div>
+              <a href="#" class="font-28 btn-close quitar-fondo" onclick="eliminardatos()" data-dismiss="modal"></a>
+            </div>
+            <div class="card-body pt-24 pb-88 p-sm-12" id="login_bg">
+                <p class="font-32 text-center azul mt-48 font-weight-600">Ingresar a mi cuenta</p>
+                <div class="container mt-24">
+                    <div class="row justify-content-md-center ">
+                        <div class="col col-lg-8">
+                            <form>
+                                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EwGNAT5h21Bqf5iAWiPuAMMNf-JIbJN2JJ3ooHvhM84_ocZhiFtYIYSlFrLk7sJL6Xp9P6efxJPoJ3ScI3NI7RpqD3F6gceWWRqwBjXJQdgsbPCqX-6gfkDEmjK0XtMdXX52IfwIaZDKlsCw85HW8o" />
+                                <div class="form-group">
+                                    <label class="azul font-weight-600" for="exampleInputEmail1">Usuario</label>
+                                    <input type="text" class="form-control mb-12" id="txtCorreo" placeholder="Escribe tu usuario (e-mail)" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mt-8 show_hide_password">
+                                        <div class="w-100">
+                                            <label class="azul font-weight-600" for="exampleInputEmail1">Contraseña</label>
+                                        </div>
+                                        <br>
+                                        <input class="form-control" type="password" style="border-radius: 8px 0px 0px 8px !important;  " placeholder="Ingresa una contraseña" id="txtContrasenia">
+                                        <div class="input-group-addon bg-white d-flex align-items-center justify-content-center pl-16 pr-16" style="border-radius: 0px 8px 8px 0px; border: 1px solid black; ">
+                                            <a href="#" class="text-center"><i class="fa mr-0 azul fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center mt-16 mb-16">
+                                    <div class="col-md-10">
+                                        <div class="d-grid gap-1 text-center">
+                                            <button type="button" class="btn button-naranja bg-amarillo2 br-20 azul font-weight-600" id="btnIngresar">Ingresar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-1 text-center">
+                                    <a href="#" data-toggle="modal" data-target="#login_password" data-dismiss="modal" class="azul font-weight-600" id="btnOlvideContrasena" onclick="AbrirModalOlvideEvent()"> Olvidé mi usuario o contraseña</a>
+                                </div>
+                                <div class="row justify-content-md-center text-center mt-16">
+                                    <div class="col-md-8">
+                                        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#registro_usuario" class="btn btn-outline-azul br-20 azul" id="btnCrearUsuario" onclick="limpiarCampos(); AbrirModalRegistroEvent();">Crear usuario y clave</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("login_info_guardada");
+        let eventDispatched = false;
+
+        const observer = new MutationObserver(() => {
+            const isVisible = modal.classList.contains("show") && getComputedStyle(modal).display === "block";
+
+            if (isVisible && !eventDispatched) {
+                eventDispatched = true;
+
+               var dataLayer = window.dataLayer = window.dataLayer || [];
+                dataLayer.push({
+                    event: 'view_promotion',
+                    TipoEvento: 'visualización',
+                    TipoElemento: 'Pop Up',
+                    Flujo: 'Ingresar a mi cuenta',
+                    TipoAcceso: 'login_info_guardada',
+                    Zona: 'Ingresar a mi cuenta',
+                    SubZona: 'Acceda a su cuenta personal',
+                    CTA: undefined,
+                    page_title: 'Ingresar cuenta - ingreso'
+                });
+            }
+        });
+
+        observer.observe(modal, {
+            attributes: true,
+            attributeFilter: ['class', 'style'],
+            subtree: false
+        });
+    });
+</script>
+
+<link rel="stylesheet" type="text/css" href="/es/assets/css/Modal/OlvideContrasenia.css">
+<div class="modal fade" id="login_password" tabindex="-1" aria-labelledby="geo_reniec" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg br-16 overflow-hidden">
+        <div class="modal-content">
+            <div class="container bg-grad-amarillo">
+                <div class="row justify-content-md-center pt-48 pb-48" id="header-logo">
+                    <div class="col col-lg-12 text-center">
+                        <img src="/es/assets/img/logo-lds.png" id="logo" alt="" srcset="">
+                    </div>
+                </div>
+                <a href="#" class="font-28 btn-close quitar-fondo" onclick="eliminardatos()" data-dismiss="modal"></a>
+            </div>
+            <div class="card-body pb-88" id="login_bg">
+                <p class="font-32 text-center azul mt-48 font-weight-600">¿Qué información no recuerdas?</p>
+                <div class="container mt-24">
+                    <div class="row justify-content-md-center ">
+                        <div class="col col-lg-8">
+
+                            <ul class="nav nav-tabs cnt-opt-superior m-auto tabs-lds-style-1 d-flex justify-content-center mt-32 mb-sm-32" id="opciones-superior-tab" role="tablist">
+                                <li class="nav-item opt-sup w-sm-33" role="presentation">
+                                    <button class="border-0 pl-56 pr-56 pt-16 pb-16 pl-sm-16 pr-sm-16 bg-humo font-14 font-sm-12 font-weight-bold text-azul mb-0 opt-left azul active mobile" id="home-tab" data-toggle="tab" data-target="#log_password" type="button" role="tab" aria-controls="home" aria-selected="true" style="color: black !important;">
+                                        Mi contraseña
+                                    </button>
+                                </li>
+
+                                <li class="nav-item w-sm-33" role="presentation">
+                                    <button class="border-0 pl-20 pr-20 pt-16 pb-16 pl-sm-16 pr-sm-16 bg-humo font-14 font-sm-12 font-weight-bold text-azul mb-0 opt-right h-100" id="profile-tab" data-toggle="tab" data-target="#log_nombre_usuario" type="button" role="tab" aria-controls="profile" aria-selected="false" style="color: black !important;">
+                                        Mi nombre de usuario
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content mt-24" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="log_password" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <form>
+                                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EwGNAT5h21Bqf5iAWiPuAMMNf-JIbJN2JJ3ooHvhM84_ocZhiFtYIYSlFrLk7sJL6Xp9P6efxJPoJ3ScI3NI7RpqD3F6gceWWRqwBjXJQdgsbPCqX-6gfkDEmjK0XtMdXX52IfwIaZDKlsCw85HW8o" />
+                                        <div class="form-group">
+                                            <label class="azul font-weight-600" for="exampleInputEmail1">Usuario</label>
+                                            <input type="text" class="form-control mb-12 mt-8" placeholder="Escribe tu usuario (e-mail)" aria-describedby="emailHelp" id="txtCorreoUsuario">
+                                        </div>
+                                        <div class="row justify-content-md-center mt-16 mb-16">
+                                            <div class="col-md-10">
+                                                <div class="d-grid gap-1 text-center">
+                                                    <button type="button" class="btn bg-amarillo2 azul font-weight-600 button-naranja br-20" id="btnEnviarNuevaContrasenia">Continuar</button>
+                                                </div>
+                                                <div class="d-grid gap-1 text-center mt-8">
+                                                    <button data-toggle="modal" data-target="#login_info_guardada" data-dismiss="modal" class="btn button-naranja bg-azul br-20 text-white">Regresar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="log_nombre_usuario" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <form>
+                                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EwGNAT5h21Bqf5iAWiPuAMMNf-JIbJN2JJ3ooHvhM84_ocZhiFtYIYSlFrLk7sJL6Xp9P6efxJPoJ3ScI3NI7RpqD3F6gceWWRqwBjXJQdgsbPCqX-6gfkDEmjK0XtMdXX52IfwIaZDKlsCw85HW8o" />
+                                        <div class="form-group d-flex form-group-responsivee">
+                                            <div class="divDocRespon" style="width: 100%; margin-left: 3rem; margin-right: 1rem;">
+                                                <label class="azul font-weight-600" for="exampleInputEmail1">Tipo</label>
+                                                <select id="selectTipoDocumento" class="form-control font-16 mt-8" type="text" name="name">
+                                                </select>
+                                            </div>
+
+                                            <div class="divNumDocRespon" style="width: 100%; margin-left: 1rem; margin-right: 3rem;">
+                                                <label class="azul font-weight-600" for="exampleInputEmail1">Número</label>
+                                                <input type="text" class="form-control mb-12 mt-8" placeholder="Nº documento" aria-describedby="emailHelp" id="txtdnilogin">
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-md-center mt-16 mb-16">
+                                            <div class="col-md-10">
+                                                <div class="d-grid gap-1 text-center">
+                                                    <a class="btn bg-amarillo2 azul button-naranja font-weight-600 br-20 text-white" id="btnAceptar">Aceptar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("login_password");
+        let eventDispatched = false;
+
+        const observer = new MutationObserver(() => {
+            const isVisible = modal.classList.contains("show") && getComputedStyle(modal).display === "block";
+
+            if (isVisible && !eventDispatched) {
+                eventDispatched = true;
+
+               var dataLayer = window.dataLayer = window.dataLayer || [];
+                dataLayer.push({
+                    event: 'view_promotion',
+                    TipoEvento: 'visualización',
+                    TipoElemento: 'Pop Up',
+                    Flujo: 'Olvide mi Contraseña',
+                    TipoAcceso: 'login_password',
+                    Zona: 'Olvide mi Contraseña',
+                    SubZona: 'Restablece tu contraseña fácilmente',
+                    CTA: undefined,
+                    page_title: 'Olvide Contraseña - ingreso'
+                });
+            }
+        });
+
+        observer.observe(modal, {
+            attributes: true,
+            attributeFilter: ['class', 'style'],
+            subtree: false
+        });
+    });
+</script>
+
+<div class="modal fade" id="registro_usuario" tabindex="-1" aria-labelledby="registro_usuario" aria-hidden="true" data-backdrop="static">
+    <style>
+        input::-ms-reveal,
+        input::-ms-clear {
+            display: none;
+        }
+    </style>
+    <div class="modal-dialog" style="margin: 9.5rem auto;">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <!-- PASO 1: DATOS BÁSICOS Y DEL SUMINISTRO -->
+                <div id="paso1_registro" style="display: block;">
+                    <form class="bg-celeste-claro p-28 br-12">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EwGNAT5h21Bqf5iAWiPuAMMNf-JIbJN2JJ3ooHvhM84_ocZhiFtYIYSlFrLk7sJL6Xp9P6efxJPoJ3ScI3NI7RpqD3F6gceWWRqwBjXJQdgsbPCqX-6gfkDEmjK0XtMdXX52IfwIaZDKlsCw85HW8o" />
+
+                        <div class="row">
+                            <div class="col-lg-12 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">N° de suministro</label>
+                                    <input type="number" class="form-control mb-12 mt-8" placeholder="Ingresa N° de suministro" id="txtNumeroSuministro">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Documento</label>
+                                    <select class="form-control mt-8" id="selTipoDocumento">
+                                        <option value="DNI">D.N.I.</option>
+                                        <option value="CE">C.E.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Número</label>
+                                    <input type="text" class="form-control mb-12 mt-8" placeholder="N° de documento" id="txtNumeroDocumento">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Primer nombre</label>
+                                    <input type="text" class="form-control mb-12 mt-8" placeholder="Ingresa tu primer nombre" id="txtNombre">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Apellido paterno</label>
+                                    <input type="text" class="form-control mb-12 mt-8" placeholder="Ingresa tu apellido paterno" id="txtApellidoPaterno">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Apellido materno <span id="verOpcionalCuenta">(opcional)</span></label>
+                                    <input type="text" class="form-control mb-12 mt-8" placeholder="Ingresa tu apellido materno" id="txtApellidoMaterno">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center mt-16">
+                            <div class="col-md-12">
+                                <div class="d-grid gap-1 text-center">
+                                    <button type="button" class="btn bg-amarillo2 azul button-naranja br-88 font-weight-600" id="btnGuardarContinuarCuenta" style="height: 55px;padding: 16px 48px 16px 48px;">Guardar y continuar</button>
+                                </div>
+                                <div class="d-grid gap-1 text-center mt-2">
+                                    <button type="button" data-toggle="modal" data-target="#login_info_guardada" data-dismiss="modal" class="btn btn-outline-azul br-88 azul" id="btnHacerloOtroMomento" style="height: 55px;padding: 16px 48px 16px 48px;">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- PASO 2: COMPLETAR DATOS DE CUENTA -->
+                <div id="paso2_registro" style="display: none;">
+                    <form class="bg-celeste-claro p-20 br-12">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EwGNAT5h21Bqf5iAWiPuAMMNf-JIbJN2JJ3ooHvhM84_ocZhiFtYIYSlFrLk7sJL6Xp9P6efxJPoJ3ScI3NI7RpqD3F6gceWWRqwBjXJQdgsbPCqX-6gfkDEmjK0XtMdXX52IfwIaZDKlsCw85HW8o" />
+
+                        <div class="row">
+                            <div class="col-lg-12 mb-16">
+                                <h5 class="font-18 font-weight-bold mb-0" style="color: black;" id="saludo_usuario_paso2">CARLOS</h5>
+                                <p class="font-16">Completa los siguientes datos para finalizar la creación de tu cuenta:</p>
+                            </div>
+
+                            <div class="col-lg-12 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Relación con el suministro</label>
+                                    <select class="form-control mt-8" id="selRelacionSuministro">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mb-1">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Celular</label>
+                                    <input type="number" class="form-control mb-12 mt-8" placeholder="Ingresa tu N° celular" id="txtCelular_Registrar" oninput="validarCelularLogin()">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">E-mail (será tu usuario)</label>
+                                    <input type="text" class="form-control mb-12 mt-8"  autocomplete="new-password" placeholder="Ingresa tu correo" id="txtCorreo_Registrar">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mb-1">
+                                <div class="input-group mt-8 show_hide_password">
+                                    <div class="w-100">
+                                        <label class="font-weight-bold">Contraseña</label>
+                                    </div>
+                                    <br>
+                                    <input autocomplete="new-password" class="form-control" type="password" style="border-radius: 8px 0px 0px 8px !important;" placeholder="Ingresa una contraseña" id="txtContrasenia_Registrar">
+                                    <div class="input-group-addon bg-white d-flex align-items-center justify-content-center pl-16 pr-16" style="border-radius: 0px 8px 8px 0px; border: 1px solid black;">
+                                        <a href="#" class="text-center"><i class="fa mr-0 azul fa-eye-slash" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mb-1">
+                                <div class="input-group mt-8 show_hide_password">
+                                    <div class="w-100">
+                                        <label class="font-weight-bold">Repetir contraseña</label>
+                                    </div>
+                                    <br>
+                                    <input class="form-control" type="password" style="border-radius: 8px 0px 0px 8px !important;" placeholder="Ingresa nuevamente la contraseña" id="txtRepetirContrasenia">
+                                    <div class="input-group-addon bg-white d-flex align-items-center justify-content-center pl-16 pr-16" style="border-radius: 0px 8px 8px 0px; border: 1px solid black;">
+                                        <a href="#" class="text-center"><i class="fa mr-0 azul fa-eye-slash" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mt-16">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="terminosycondiciones1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Aceptar política de tratamiento de datos personales. <a id="abrirPoliticaLogin" class="font-weight-bold azul">Leer condiciones y política </a>
+                                    </label>
+                                </div>
+
+                                <div class="form-check mt-24" id="TerminoyCondiciones">
+                                    <input class="form-check-input" type="checkbox" value="" id="terminosycondiciones2">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Aceptar términos y condiciones de creación de perfil. <a id="abrirTyCLogin" class="font-weight-bold azul">Leer términos y condiciones </a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center mt-16 mb-16">
+                            <div class="col-md-12">
+                                <div class="d-grid gap-1 text-center">
+                                    <button type="button" class="btn bg-amarillo2 azul button-naranja br-88 font-weight-600" id="btnRegistrarUsuarioCuenta" style="height: 55px;padding: 16px 48px 16px 48px;">Crear mi cuenta</button>
+                                </div>
+                                <!--<div class="d-grid gap-1 text-center mt-8">
+                                    <button type="button" class="btn btn-outline-azul br-88 azul" id="btnRegresarPaso1" style="height: 55px;padding: 16px 48px 16px 48px;">Volver</button>
+                                </div>-->
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL: VALIDACIÓN TIPO PROP (Grandes Clientes) -->
+<div class="modal fade" id="modal_validacion_prop" tabindex="-1" aria-labelledby="modal_validacion_prop_label" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-28" style="background: #F0F8FD !important; border-radius: 0.357rem;">
+                <div class="mb-24">
+                    <h1 class="font-16">Estimado cliente:</h1>
+                    <p class="font-14">
+                        Para consultas sobre el suministro en mención, favor contactarse con su ejecutivo de Grandes Clientes al 271-9000 anexo 6176 / 6207 o al correo gclientes@luzdelsur.com.pe <br />
+                        Gracias por su comprensión.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <button type="button" data-dismiss="modal" class="btn btn-outline-azul br-28 azul" style="width: -webkit-fill-available;" id="btn_cerrar_validacion_prop">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_validacion_fonoluz" tabindex="-1" aria-labelledby="modal_validacion_fonoluz" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-28" style="background: #F0F8FD !important; border-radius: 0.357rem; ">
+                <div class="mb-24">
+                    <h1 class="font-16">Estimado cliente:</h1>
+                    <p class="font-14">
+                        Para consultas sobre el suministro en mención, favor contactarse a Fonoluz al  617-5000.<br />
+                        Gracias por su comprensión.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <button type="button" data-dismiss="modal" class="btn btn-outline-azul br-28 azul" style="width: -webkit-fill-available;" id="btn_cerrar_validacion_prop">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("registro_usuario");
+        let eventDispatched = false;
+
+        const observer = new MutationObserver(() => {
+            const isVisible = modal.classList.contains("show") && getComputedStyle(modal).display === "block";
+
+            if (isVisible && !eventDispatched) {
+                eventDispatched = true;
+
+               var dataLayer = window.dataLayer = window.dataLayer || [];
+                dataLayer.push({
+                    event: 'view_promotion',
+                    TipoEvento: 'visualización',
+                    TipoElemento: 'Pop Up',
+                    Flujo: 'Registrar usuario',
+                    TipoAcceso: 'registro_usuario',
+                    Zona: 'Registrar usuario',
+                    SubZona: 'Regístrate para una mejor experiencia',
+                    CTA: undefined,
+                    page_title: 'Registrar usuario - ingreso'
+                });
+            }
+        });
+
+        observer.observe(modal, {
+            attributes: true,
+            attributeFilter: ['class', 'style'],
+            subtree: false
+        });
+
+        $("#btnRegistrarUsuario").on("click", function () {
+            var dataLayer = window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                event: 'select_promotion',
+                TipoEvento: 'Interacci\u00F3n',
+                TipoElemento: 'Pop Up',
+                Flujo: 'Registrar usuario',
+                TipoAcceso: 'btnRegresarUsuario',
+                Zona: 'Registrar usuario',
+                SubZona: 'Regístrate para una mejor experiencia',
+                CTA: 'Crear usuario y clave',
+                page_title: 'Registrar usuario - formulario',
+            });
+        });
+
+        $("#btnRegresarUsuario").on("click", function () {
+            var dataLayer = window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                event: 'select_promotion',
+                TipoEvento: 'Interacci\u00F3n',
+                TipoElemento: 'Pop Up',
+                Flujo: 'Registrar usuario',
+                TipoAcceso: 'btnRegresarUsuario',
+                Zona: 'Registrar usuario',
+                SubZona: 'Regístrate para una mejor experiencia',
+                CTA: 'Regresar',
+                page_title: 'Registrar usuario - formulario',
+            });
+        });
+
+    });
+</script>
+
+<script type="text/javascript" src="/es/Scripts/RegistroCuentas.js"></script>
+<script type="text/javascript" src="/es/Scripts/Modulos/RegistrarDatosGuardados.js"></script>
+<div class="modal fade" id="login_info_guardada2" tabindex="-1" aria-labelledby="geo_reniec" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg br-16 overflow-hidden">
+        <div class="modal-content">
+
+            <div class="container">
+                <div class="row justify-content-md-center pt-48 pb-48 bg-grad-amarillo" id="header-logo">
+                    <div class="col col-lg-12 text-center">
+                        <img src="/es/assets/img/logo-lds.png" id="logo" alt="" srcset="">
+                    </div>
+                </div>
+                <a href="#" class="font-28 btn-close quitar-fondo" data-dismiss="modal"></a>
+            </div>
+            <div class="card-body pt-24 pb-88 p-sm-12" id="login_bg">
+                <p class="font-32 text-center azul mt-48 font-weight-600">Ingresa para actualizar tus datos</p>
+                <div class="container mt-24">
+                    <div class="row justify-content-md-center ">
+                        <div class="col col-lg-8">
+                            <form>
+                                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EwGNAT5h21Bqf5iAWiPuAMMNf-JIbJN2JJ3ooHvhM84_ocZhiFtYIYSlFrLk7sJL6Xp9P6efxJPoJ3ScI3NI7RpqD3F6gceWWRqwBjXJQdgsbPCqX-6gfkDEmjK0XtMdXX52IfwIaZDKlsCw85HW8o" />
+                                <div class="form-group">
+                                    <label class="azul font-weight-600" for="exampleInputEmail1">Usuario</label>
+                                    <input type="text" class="form-control mb-12" id="txtCorreo2" placeholder="Escribe tu usuario (e-mail)" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mt-8 show_hide_password">
+                                        <div class="w-100">
+                                            <label class="azul font-weight-600" for="exampleInputEmail1">Contraseña</label>
+                                        </div>
+                                        <br>
+                                        <input class="form-control" type="password" style="border-radius: 8px 0px 0px 8px !important;  " placeholder="Ingresa una contraseña" id="txtContrasenia2">
+                                        <div class="input-group-addon bg-white d-flex align-items-center justify-content-center pl-16 pr-16" style="border-radius: 0px 8px 8px 0px; border: 1px solid black; ">
+                                            <a href="#" class="text-center"><i class="fa mr-0 azul fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center mt-16 mb-16">
+                                    <div class="col-md-10">
+                                        <div class="d-grid gap-1 text-center">
+                                            <button type="button" class="btn button-naranja bg-amarillo2 br-20 azul font-weight-600" id="btnIngresar2">Ingresar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-1 text-center">
+                                    <a href="#" data-toggle="modal" data-target="#login_password" data-dismiss="modal" class="azul font-weight-600"> Olvidé mi usuario o contraseña</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-fondo  " id="modalreccom" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-left:207px;">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content modal-xs " style="padding: 28px; ">
+            <h1 class="font-16"> Estimado cliente:</h1>
+            <p class="font-14">
+                Por el momento se encuentra suspendida esta solicitud hasta que finalice su reclamo en curso.
+            </p>
+            <p class="font-14">
+                Para cualquier consulta adicional, por favor contactarse a Fonoluz al 617-5000 o acercarse a cualquiera de nuestras sucursales. <br />
+                Gracias por su compresión.
+            </p>
+            <div class="text-center mt-12">
+                <button type="button" data-dismiss="modal" class="btn br-88 pl-48 pr-48 font-16 font-weight-600 w-100 bt-cerrar-mod m-auto" id="btn-chatear-aqui">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade hide show" id="modalCLILIB" tabindex="-1" aria-labelledby="exampleModalLabel" style="padding-right: 0px;" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-28">
+                <div class="mb-24">
+                    <h1 class="font-16"> Estimado cliente:</h1>
+                    <p class="font-14">
+                        Para consultas sobre el suministro en mención, favor contactarse con su ejecutivo de Grandes Clientes al 271-9000 anexo 6176 / 6207 o al correo gclientes@luzdelsur.com.pe <br />
+                        Gracias por su comprensión.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <button type="button" data-dismiss="modal" class="btn br-88 pl-48 pr-48 font-16 font-weight-600 w-100 bt-cerrar-mod m-auto" id="btn-chatear-aqui">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="tyc_envio_recibo_digital" tabindex="-1" aria-labelledby="como-ingresar-lectura" style="padding-right: 0px; display: none; z-index: 99999;" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-32 bg-celeste-claro br-16">
+                <h1 class="font-weight-bold font-20" style="text-decoration: underline;">Términos y Condiciones</h1>
+                <h2 class="font-weight-bold font-20">
+                    I. Condiciones Generales
+                </h2>
+                <p>
+                    El acceso y uso del Sistema de Medios de Pago (en adelante, el “Servicio”) se encuentra regulado por los términos y condiciones descritos a continuación
+                    (en adelante, los “Términos y Condiciones”), así como por las leyes y normas que resulten pertinentes en la República del Perú. En consecuencia, las
+                    transacciones que se realicen en este sitio, así como sus efectos legales y jurídicos, quedan sujetos a estas reglas y sometidos a la legislación peruana.
+                </p>
+                <p>
+                    El Servicio está disponible para todos los clientes / usuarios (en adelante, el “Usuario”) sin restricciones en cuanto a la cantidad de pago y ni la cantidad
+                    de suministros, sujetos a la transacción, debiendo validar previamente en determinados casos el código captcha.
+                </p>
+                <p>
+                    Los Términos y Condiciones contenidos en el presente instrumento se entenderán y aplicarán a todas las transacciones que sean realizadas en este sitio entre el Usuario y Luz del Sur.
+                </p>
+                <p>
+                    El Usuario declara y garantiza estar apto y tener capacidad legal para aceptar los presentes Términos y Condiciones, y que toda la información que proporcione a Luz del Sur en el marco del presente Servicio, bajo cualquier forma, será exacta, verdadera, completa y correcta; liberando de cualquier responsabilidad sobre el particular a Luz del Sur.
+                </p>
+                <p>
+                    Es requisito para poder hacer uso del Servicio, la aceptación de los Términos y Condiciones descritos a continuación. Cualquier Usuario que realice una transacción de pago a través del Servicio, declara y reconoce, por el solo hecho de realizar dicho pago, que conoce y acepta todos y cada uno de los Términos y Condiciones descritos en este documento.
+                </p>
+                <p>
+                    Luz del Sur se reserva el derecho de actualizar y/o modificar los Términos y Condiciones que se detallan a continuación, en cualquier momento, sin previo aviso. Es por ello que se recomienda al Usuario leer y revisar los Términos y Condiciones en cada oportunidad que desee utilizar este sitio. Dichos cambios serán de aplicación desde la fecha en la cual sean publicadas en la página web de Luz del Sur.
+                </p>
+                <p>
+                    Luz del Sur realizará su mejor y mayor esfuerzo para asegurar la disponibilidad y continuidad del Servicio de pago en su sitio web sin interrupciones ni errores en el acceso a los contenidos, transmisión de información u otro que pudiera tener lugar; sin embargo, debido a la naturaleza misma de internet, no es posible garantizar tales extremos. En ese sentido, Luz del Sur no será responsable contractual ni extracontractualmente, por ningún daño directo o indirecto, resultante de la no disponibilidad y/o continuidad del Servicio, de la demora en el procesamiento del pago, del fraude por suplantación de identidad del Usuario, o de cualquier otro daño que pudiese ocurrir durante la utilización del Servicio o como consecuencia del uso del mismo.
+                </p>
+                <p>
+                    Sin perjuicio de ello, en casos de interrupciones del Servicio, Luz del Sur procurará restablecer el Servicio con la mayor celeridad posible, sin que por ello pueda imputársele algún tipo de responsabilidad.
+                </p>
+                <p>
+                    Así también el acceso al Servicio podría eventual u ocasionalmente verse suspendido o restringido a consecuencia de determinados trabajos de mantenimiento, reparación y/o la introducción de nuevos productos o servicios. En tales casos, Luz del Sur procurará limitar la regularidad y duración de tales suspensiones y/o restricciones.
+                </p>
+                <p>
+                    Luz del Sur no responderá por los perjuicios ocasionados al Usuario del Servicio, provenientes del uso inadecuado de las tecnologías puestas a disposición de este, cualquiera sea la forma en la cual se utilicen inadecuadamente éstas tecnologías.
+                    <br>
+                    Se detallan a continuación los Términos y Condiciones:
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    II. Registro del Usuario
+                </h2>
+                <p>
+                    Para realizar el pago de recibos el Usuario deberá registrar un número de suministro válido así como un número de teléfono móvil o correo electrónico, el mismo que podría servir para enviar información referente al servicio.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    III. Derechos del Usuario
+                </h2>
+                <p>
+                    El Usuario cuenta con todos los derechos que se encuentran reconocidos por la legislación de protección al consumidor vigente en el territorio del Perú, además de los que le otorgan estos Términos y Condiciones. El solo hecho de visitar este sitio en el cual es posible realizar pagos, no impone al Usuario obligación alguna, a menos que de forma inequívoca haya aceptado las condiciones para realizar el pago, en la forma indicada en estos Términos y Condiciones.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    IV. Procedimiento para hacer uso del Servicio
+                </h2>
+                <p>
+                    En primer lugar, el Usuario deberá ingresar a la página web de Luz del Sur: http://www.luzdelsur.com.pe/. Cuando ingrese a dicho entorno, procederá a realizar el/los pago(s) correspondiente(s) mediante el enlace “pagos en línea”.
+                </p>
+                <p>
+                    Cada vez que consulte un suministro, si tuviera deuda pendiente de pago que sea mayor a S/ 0,00 (cero soles); aparecerá el botón PAGAR como disponible. Se activarán 3 opciones: pago de la deuda total, pago de la deuda vencida (deuda anterior o atrasada) o un pago a cuenta (pago parcial). El Usuario deberá elegir cuál de las opciones desea cancelar. Una vez seleccionada la opción, el Usuario deberá seleccionar el medio de pago con el que cancelará la deuda.
+                </p>
+                <p>
+                    Cabe precisar que la opción “pago a cuenta” permite no menores a S/ 0.50 (cincuenta céntimos de sol).
+                </p>
+                <p>
+                    Luego de elegido el medio de pago, el Usuario deberá leer estos Términos y Condiciones y marcar el casillero de confirmación aceptándolos.
+                </p>
+                <p>
+                    Una vez seleccionados estos Términos y Condiciones, el Usuario procederá a presionar el botón PAGAR y emergerá una primera ventana requiriendo un número de celular o correo electrónico para el envío del código de verificación. Luego de registrar el número de celular o correo electrónico, se enviará un SMS o mail según selección con el código de verificación otorgándole al usuario un minuto para registrarlo.
+                </p>
+                <p>
+                    Luego de registrado el código de verificación emergerá una ventana para ingresar el tipo y el número del documento de identidad luego de lo cual aparecerá finalmente la ventana del entorno del medio de pago.
+                </p>
+                <p>
+                    En esta ventana el Usuario ingresará los datos de su tarjeta de crédito/débito y presionará nuevamente el botón PAGAR.
+                </p>
+                <p>
+                    El Usuario obtendrá el número de operación de la transacción efectuada, siempre que esta fuera exitosa, la misma que será enviada mediante un SMS al celular o mail al correo electrónico registrado al momento de la validación. Si la operación no fuera exitosa, el Usuario deberá repetir nuevamente todo el circuito.
+                </p>
+                <p>
+                    Si el usuario marcara la casilla de “Recordar Tarjeta Frecuente” esta información se almacenará en el entorno de los medios de pago para futuras operaciones. Luz del Sur nunca almacenará la información de las tarjetas de pago del Usuario, por lo que no será responsable por el uso indebido de los datos de la tarjeta de crédito/debito que sean utilizadas para hacer uso del Servicio.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    V. Medios de Pago que se podrán utilizar en este sitio
+                </h2>
+                <p>
+                    Los recibos, productos y/o servicios ofrecidos en este sitio podrán ser cancelados utilizando los siguientes medios de pago:
+                </p>
+                <p>
+                    VISA / MASTERCARD / AMERICAN EXPRESS / DINERS CLUB. En cualquiera de los casos la tarjeta puede ser de crédito o débito, para pagos mediante VISA se restringe a tarjetas emitidas por un Banco Local.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    VI. Costo del Servicio
+                </h2>
+                <p>
+                    La transacción de este Servicio de pago no generará costo alguno para el Usuario.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    VII. Política de Privacidad
+                </h2>
+                <p>
+                    Luz del Sur garantiza la seguridad y confidencialidad en el tratamiento de los datos personales facilitados por el Usuario de conformidad con la Ley de Protección de Datos Personales. Sin embargo, el Usuario reconoce que al ingresar a la página web de Luz del Sur, siendo este un servicio que hace uso de internet, podría estar sujeto a interferencias o violaciones por parte de terceros y a factores externos, por tanto el Usuario asume las consecuencias y responsabilidades que de ello puedan derivarse.
+                </p>
+                <h2 class="font-weight-bold font-20">
+                    VIII. Prohibiciones
+                </h2>
+                <p>
+                    No está permitido realizar un uso indebido del sistema de Medios de Pago, cualquier utilización que incumpla la normatividad o las leyes que sobre el particular rijan, será denunciado ante las autoridades pertinentes con las consecuentes responsabilidades civiles y/o judiciales que acarree el hecho.
+                </p>
+                <div class="text-center">
+                    <button type="button" class=" pt-12 pb-12 br-24 pl-16 pr-16 mt-sm-12 mt-sm-20 font-16 font-weight-600 button-naranja bg-amarillo2 azul border-0 w-fit mt-24" data-dismiss="modal" id="btnAceptarTerminosyCondiciones3">He leído y acepto los términos y condiciones</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="" />
+
+<link rel="stylesheet" type="text/css" href="/es/assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css/bootstrap-extended.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css-webfonts/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css-webfonts/brands.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css-webfonts/solid.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css/boot-dev.css?v1">
+
+<script type="text/javascript" src="/es/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/es/assets/js/bootstrapbundlemin.js"></script>
+<script type="text/javascript" src="/es/assets/js/function.js"></script>
+<script type="text/javascript" src="/es/assets/js/sweetalert2@11.js"></script>
+<div id="imagenCarga" style="display: none; position: fixed; top: 0; left: 0; z-index: 9999;">
+    <div style="position: fixed; width: 100%; height: 100%; z-index: 9999;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+            <img src="/es/assets/img/cargando.gif">
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/es/assets/css/style_ext.css">
+<link rel="stylesheet" type="text/css" href="/es/assets/css/footerIso.css">
+
+<!-- CSS TEMPORAL (SERA MOVIDO A OTRA UBICACIÓN)-->
+<!--style>
+    .btn-cookies:hover {
+        background-color: #FCC330 !important;
+    }
+
+    .cookie-aceptar:hover {
+        background-color: #FCC330 !important;
+        border: 2px solid #FCC330 !important;
+    }
+
+    .btn-outline-azul:hover {
+        color: white !important;
+    }
+
+    body {
+        background-color: #F5FBFF;
+        padding-bottom: 380px !important;
+    }
+
+    .contenido-slider-home {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+
+    #cnt_cookies {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 99;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    #lds_cookies {
+        margin: auto;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: #0000000a 0px -2px 5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+        #lds_cookies p {
+            line-height: 24px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+            #lds_cookies p a {
+                margin-right: 5px;
+            }
+
+    #close-cookies {
+        padding: 8px;
+        background-color: gold;
+        font-weight: bold;
+        color: blue;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 17px;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(13px);
+        -ms-transform: translateX(13px);
+        transform: translateX(13px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+    .bg-celeste-claro {
+        background-color: #F0F8FD !important;
+    }
+
+    .bg-conf {
+        background-color: #ebebeb !important;
+    }
+
+    .btn-cookies {
+        padding: 8px 24px;
+        border-radius: 4px;
+        color: #ffffff !important;
+        background-color: #263184;
+        font-weight: 600;
+    }
+
+    .btn-cookies2 {
+        padding: 8px 24px;
+        border-radius: 4px;
+        color: #263184;
+        background-color: #FAE870;
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .aviso-cookie {
+        display: none;
+    }
+
+        .aviso-cookie.activo {
+            display: block !important;
+        }
+</style-->
+<style>
+    body {
+        background-color: #F5FBFF;
+    }
+
+    .contenido-slider-home {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+</style>
+<div class="modal fade modal-fondo" id="modalMensajeInicio" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered mr-sm-24">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <a class="close" data-dismiss="modal" aria-label="Close" style="position:absolute; z-index:99; top:5px; right: 10px;">
+                    <img src="/es/assets/img/seguimiento_alumbrado_publico/IconoCerrar.png" style="width: 20px; height: 20px;" />
+                </a>
+                <img class="img-fluid" src="https://cdn.luzdelsur.com.pe/weblds/anuncio.jpg?v=639113319599101799" />
+            </div>
+        </div>
+    </div>
+</div>
+<body class="bg-white b2">
+    <header id="header-home">
+    <div class="container-fluid bg-grad-amarillo text-white pl-sm-0 pr-sm-0" id="cnt-header-home">
+        <div class="container pl-sm-0 pr-sm-0 ">
+            <nav class="navbar navbar-expand-lg p-0 font-14">
+                <a class="navbar-brand d-inline-block d-lg-none" href="/es/"><img src="/es/assets/img/logo-lds-movil.png" class="ml-sm-16" width="48"></a>
+                <span class="navbar-text d-inline d-lg-none">
+                    <button data-toggle="modal" data-target="#login_info_guardada" class="btn bg-azul text-white br-16 pt-8 pb-8 font-14 mt-8 mt-sm-0 pl-sm-20 pr-sm-20 font-sm-13">Ingresar a mi cuenta</button>
+                </span>
+
+                <button class="navbar-toggler mr-sm-12" type="button" data-toggle="collapse" data-target="#menu_lds" aria-controls="menu_lds" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars azul"></i>
+                </button>
+
+                <div class="navbar-collapse mt-sm-12 d-lg-flex justify-content-end w-100 collapse" id="menu_lds">
+                    <div class="navbar-nav ml-auto align-items-center font-14 lh-18" id="cnt-opt-superior">
+                        <a class="nav-link text-azul font-weight-600 pl-20 pr-20" style="background-color: white;" href="/es/Home">
+                            Personas
+                        </a>
+                        <a class="nav-link text-azul font-weight-600 pl-20 pr-20" href="/es/Empresas/ClientesLibres">Empresas</a>
+                        <a class="nav-link text-azul font-weight-600 pl-20 pr-20" href="/es/Inversionista">Inversionistas</a>
+                        <a class="nav-link text-azul font-weight-600 pl-20 pr-20" href="/es/InformacionCorporativa">Somos Luz del Sur</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid text-white d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pt-28 pb-28">
+                    <a href="/es/Home">  <img src="/es/assets/img/logo-lds.png" alt=""> </a>
+                </div>
+                <div class="col-lg-5 pt-28 pb-28 text-right text-sm-center">
+                    <button data-toggle="modal" data-target="#login_info_guardada" class="btn bg-azul  button-naranja text-white br-24 pt-12 pb-12 pl-24 pr-24 font-14">Ingresar a mi cuenta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+    .btn-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background-size: auto;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        sendEventLogin({
+            evento: 'login_status',
+            estado: 'Web p\u00FAblica',
+            user_id: undefined
+        });
+    });
+
+    function sendEventLogin({ evento, estado, user_id }) {
+        var dataLayer = window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: evento,
+            Login_Status: estado,
+            user_id: user_id,
+            Version: '1.0',
+            Plataforma: 'Web'
+        });
+    }
+</script>
+    <!--VARIABLES Qualtrics -->
+    <h1 id="QSI_ORIGEN" hidden>WEB</h1>
+    <h1 id="QSI_DIRECCION" hidden>Home</h1>
+    <h1 id="QSI_LOGIN" hidden>Falso</h1>
+    <h1 id="QSI_WEB_DISPOSITIVO" hidden></h1>
+    <h1 id="QSI_FLAG" hidden>1</h1>
+    <h1 id="QSI_URL" hidden></h1>
+
+    <div class="container-fluid p-0 pb-88">
+        <div class="container text-center">
+            <h1 class="azul font-56 font-sm-32" id="titulo-home" style="">¿En qué te podemos ayudar?</h1>
+        </div>
+
+        <div class="container mt-sm-48 pl-0 pr-0 pl-sm-16 pr-sm-16" style="margin-top:75px;">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <h2 class="grey font-39 font-weight-bold text-movil-center">Estoy sin luz</h2>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <img src="/es/assets/img/Home/icon_home.png" width="32">
+                            </div>
+                            <div class="col-8 col-lg-8 text-center pl-4 pr-4 d-flex align-items-center justify-content-center box-home">
+                                <p class="mb-0 font-weight-600 font-16">
+                                    <a href="/es/corteluz" class="text-black" onclick="trackClick(event, 'servicio electrico'); sendEventButtons('Estoy sin luz','Conocer qué ocurre con mi servicio eléctrico');">Conocer qué ocurre con mi servicio eléctrico</a>
+                                </p>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/corteluz" class="text-black font-24" onclick="trackClick(event, 'servicio electrico'); sendEventButtons('Estoy sin luz','Conocer qué ocurre con mi servicio eléctrico');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <img src="/es/assets/img/Home/icon_street-light.png" width="32">
+                            </div>
+                            <div class="col-8 col-lg-8 text-center pl-4 pr-4 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/CorteAlumbradoPublico" class="text-black" onclick="trackClick(event, 'conoce alumbrado publico'); sendEventButtons('Estoy sin luz','Conocer qué ocurre con el alumbrado público');"><p class="mb-0 font-weight-600 font-16">Conocer qué ocurre con el alumbrado público</p></a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/CorteAlumbradoPublico" class="text-black font-24" onclick="trackClick(event, 'conoce alumbrado publico'); sendEventButtons('Estoy sin luz','Conocer qué ocurre con el alumbrado público');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 br-16 bg-white mt-16 cnt-shw">
+                        <img src="https://cdn.luzdelsur.com.pe/weblds/home/imagen1.png" class="w-100 brt-12" alt="">
+                        <div class="p-20">
+                            <h2 class="font-weight-bold font-20 text-black mt-0" style="text-align:center">¿Ya actualizaste el nombre en tu recibo?</h2>
+                            <a href="/es/CambioNombre/Ingreso" class="btn bg-amarillo2 button-naranja text-azul br-88 d-block mt-20 pt-12 pb-12 font-14 font-weight-bold w-fit m-auto d-flex align-items-center justify-content-center" style="height: 44px;">Actualizar mis datos</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mt-sm-64">
+                    <h2 class="grey font-39 font-weight-bold text-movil-center">Ver mi recibo y pagar</h2>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-36 pr-36 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/VerPagarRecibo" class="text-black" onclick="trackClick(event, 'ver recibo'); sendEventButtons('Ver mi recibo y pagar','Ver mi recibo');"><p class="mb-0 font-weight-600 font-16">Ver mi recibo</p></a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/VerPagarRecibo" class="text-black font-24" onclick="trackClick(event, 'ver recibo'); sendEventButtons('Ver mi recibo y pagar','Ver mi recibo');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-36 pr-36 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/PagarRecibo" class="text-black" onclick="trackClick(event, 'pagar recibo'); sendEventButtons('Ver mi recibo y pagar','Pagar mi recibo');"><p class="mb-0 font-weight-600 font-16">Pagar mi recibo</p></a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/PagarRecibo" class="text-black font-24" onclick="trackClick(event, 'pagar recibo'); sendEventButtons('Ver mi recibo y pagar','Pagar mi recibo');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-36 pr-36 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/EstadoCuenta" class="text-black" onclick="sendEventButtons('Ver mi recibo y pagar','Ver mis recibos anteriores');"><p class="mb-0 font-weight-600 font-16">Ver mis recibos anteriores</p></a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/EstadoCuenta" class="text-black font-24" onclick="sendEventButtons('Ver mi recibo y pagar','Ver mis recibos anteriores');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="grey font-39 font-weight-bold mt-64 text-movil-center">Ver más sobre mi recibo</h2>
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo" id="divNoEntiendoConsumo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-36 pr-36 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/NoEntiendoConsumo" class="mb-0 font-weight-600 font-16 text-black" onclick="sendEventButtons('Ver más sobre mi recibo','Ver explicación del recibo');">Ver explicación del recibo</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/NoEntiendoConsumo" class="text-black font-24" onclick="sendEventButtons('Ver más sobre mi recibo','Ver explicación del recibo');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-36 pr-36 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/DescargarRecibo" class="mb-0 font-weight-600 font-16 text-black" onclick="sendEventButtons('Ver más sobre mi recibo','Descargar mi recibo');">Descargar mi recibo</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/DescargarRecibo" class="text-black font-24" onclick="sendEventButtons('Ver más sobre mi recibo','Descargar mi recibo');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 br-16 bg-white mt-16 cnt-shw">
+                        <img src="/es/assets/img/Home/recibo-digital2.png" class="w-100" alt="">
+                        <div class="p-20">
+                            <h2 class="font-weight-bold font-20 text-black mt-0">Afíliate al nuevo recibo digital</h2>
+                            <ul class="text-black mt-12">
+                                <li><b>Despreocúpate por el respaldo;</b> tienes acceso en línea a todos tus recibos históricos.</li>
+                                <li><b>Te explicamos visualmente</b> el porqué de todo.</li>
+                            </ul>
+                            <a href="/es/ReciboDigital" class="btn bg-amarillo2 button-naranja text-azul br-88 d-block mt-20 pt-12 pb-12 font-14 font-weight-bold w-fit m-auto d-flex align-items-center justify-content-center" style="height: 44px;">Afíliate aquí</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mt-sm-64">
+                    <h2 class="grey font-39 font-weight-bold text-movil-center">Necesito un nuevo medidor</h2>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-36 pr-36 d-flex align-items-center justify-content-center box-home">
+                                <a href="https://www.luzdelsur.com.pe/misconexiones/" rel="noopener" class="mb-0 font-weight-600 font-16 text-black" target="_blank" onclick="sendEventButtons('Necesito un nuevo medidor','Solicitar o hacer seguimiento a mi nueva caja / conexión / medidor');">Solicitar o hacer seguimiento a mi nueva caja / conexión / medidor</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="https://www.luzdelsur.com.pe/misconexiones/" rel="noopener" target="_blank" class="text-black font-24" onclick="sendEventButtons('Necesito un nuevo medidor','Solicitar o hacer seguimiento a mi nueva caja / conexión / medidor');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="grey font-39 font-weight-bold mt-64 text-movil-center">Ingresar a mis trámites</h2>
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-0 pr-0 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/CambioNombre/Ingreso" class="mb-0 font-weight-600 font-16 text-black" onclick="sendEventButtons('Ingresar a mis trámites','Solicitar el cambio de nombre en mi recibo');">Solicitar el cambio de nombre en mi recibo</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/CambioNombre/Ingreso" class="text-black font-24" onclick="sendEventButtons('Ingresar a mis trámites','Solicitar el cambio de nombre en mi recibo');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-0 pr-0 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/OtrosTramites" class="mb-0 font-weight-600 font-16 text-black" onclick="sendEventButtons('Ingresar a mis trámites','Solicitar otros trámites');">Solicitar otros trámites</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/OtrosTramites" class="text-black font-24" onclick="sendEventButtons('Ingresar a mis trámites','Solicitar otros trámites');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-16 pr-16 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/SeguimientoTramite" class="mb-0 font-weight-600 font-16 text-black" onclick="sendEventButtons('Ingresar a mis trámites','Hacer seguimiento a mis trámites o consultas');">Hacer seguimiento a mis trámites o consultas</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/SeguimientoTramite" class="text-black font-24" onclick="sendEventButtons('Ingresar a mis trámites','Hacer seguimiento a mis trámites o consultas');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-12 cnt-shw azul p-8 pt-0 pl-24 pr-24 pb-0 mt-16 bg-humo">
+                        <div class="row">
+                            <div class="col-10 col-lg-10 text-center pl-16 pr-16 d-flex align-items-center justify-content-center box-home">
+                                <a href="/es/VisitaPersonal" class="mb-0 font-weight-600 font-16 text-black" onclick="sendEventButtons('Ingresar a mis trámites','Consultar si tengo un trabajo o inspección en mi medidor');">Consultar si tengo un trabajo o inspección en mi medidor</a>
+                            </div>
+                            <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <a href="/es/VisitaPersonal" class="text-black font-24" onclick="sendEventButtons('Ingresar a mis trámites','Consultar si tengo un trabajo o inspección en mi medidor');"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carrusel-home" class="carousel slide text-white mt-96 pb-20" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="container text-center text-azul contenido-slider-home">
+                        <h2 class="font-48 font-weight-700 font-sm-32 text-azul">Con la electromovilidad <br> hemos dejado de consumir</h2>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img class="mt-40 mb-20 img-galon" height="75%" src="/es/assets/img/Home/icono-galon2.png">
+                            <p style="font-size:62px;margin-top:68px;margin-left:6px;font-weight:bold">53,619</p>
+                        </div>
+                        <p class="font-24 text-azul font-weight-600 titulo-galon">galones de combustible diésel</p>
+                        <h5 class="text-azul font-weight-600">(de mayo 2023 a la fecha)</h5>
+                        <a href="/es/InformacionCorporativa/FlotaVehiculos" class="btn button-naranja bg-amarillo2 text-azul br-20 d-block mt-88  pr-24 pl-24 font-14 font-weight-bold w-fit m-auto d-flex align-items-center justify-content-center" style="height:44px">Conoce nuestro proyecto</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center pt-28 pb-28">
+                        <a href="/es/InformacionCorporativa" class="link-slider-home">
+                            <h3 class="font-16 azul2 font-weight-600 mb-0">Compromiso sostenible</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center pt-28 pb-28">
+                        <a href="/es/InformacionCorporativa/NuestraEmpresa" class="link-slider-home">
+                            <h3 class="font-16 azul2 font-weight-600 mb-0">Nuestra empresa</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center pt-28 pb-28">
+                        <a href="https://luzdelsur.hiringroom.com/jobs" target="_blank" rel="noopener" class="link-slider-home">
+                            <h3 class="font-16 azul2 font-weight-600 mb-0">
+                                Trabaja con nosotros
+                            </h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center pt-28 pb-28">
+                        <a href="/es/InformacionCorporativa/Informacion" class="link-slider-home">
+                            <h3 class="font-16 azul2 font-weight-600 mb-0">Información de interés</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-96 pt-sm-20 pb-sm-24">
+            <div class="container" style="margin-bottom:150px">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="font-40 font-sm-32 azul">Resuelve rápido, personalizado y remoto</h2>
+                    </div>
+                    <div class="col-lg-2 text-center mt-36 pl-36 pr-36">
+                    </div>
+                    <div class="col-lg-4 text-center mt-36 pl-36 pr-36">
+                        <img src="/es/assets/img/Home/icono_nuevo_recibo_digital.png" alt="" height="100">
+                        <h3 class="font-24 azul mt-16">Nuevo recibo digital</h3>
+                        <p class="mt-12">
+                            Respaldo y explicación visual
+                            de todo lo que necesitas
+                        </p>
+
+                        <a href="/es/ReciboDigital" class="btn button-naranja bg-amarillo2 azul br-20 w-100 d-block br-88 d-flex align-items-center justify-content-center" style="padding: 15px; border-width: 2px; text-align: center; line-height: 1.5; font-weight: bold">
+                            Afíliate al nuevo recibo digital
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 text-center mt-36 pl-36 pr-36">
+                        <img src="/es/assets/img/Home/icono3.png" alt="" height="100">
+                        <h3 class="font-24 azul mt-16">App Luz del Sur</h3>
+                        <p class="mt-12">
+                            Accede a tu información personalizada desde cualquier lugar
+                        </p>
+
+                        <a id="EnlaceModal" class="btn button-naranja bg-amarillo2 azul br-20 w-100 d-block br-88 d-flex align-items-center justify-content-center" style="padding: 15px; border-width: 2px;  line-height: 1.5; font-weight: bold">
+                            Descargar app Luz del Sur
+                        </a>
+                    </div>
+                    <div class="col-lg-2 text-center mt-36 pl-36 pr-36">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    ﻿<footer class="pb-48 bg-plomo2 pt-48">
+    <div class="container-fluid pt-24 pb-sm-24 text-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-start order-4 order-lg-4 d-flex align-items-end">
+                    <div>
+                        <ul class="list-unstyled mt-16 font-16 mb-4 LuzDelSurResponsive">
+                            <li>© 2024 LUZ DEL SUR S.A.A.</li>
+                            <li>RUC: 20331898008</li>
+                            <li>Todos los derechos reservados</li>
+                        </ul>
+
+                        <ul class="list-unstyled d-flex font-18 text-black m-auto justify-content-start">
+                            <li class="p-12 pt-0 pl-0 mt-24"><a href="https://www.facebook.com/luzdelsuroficial/ " target="_blank" rel="noopener"><i class="icono-color-facebook fa-brands fa-square-facebook font-24"></i></a></li>
+                            <li class="p-12 pt-0 mt-24"><a href="https://www.linkedin.com/company/luz-del-sur/mycompany/ " target="_blank" rel="noopener"><i class="icono-color-linkedin fa-brands fa-linkedin font-24"></i></a></li>
+                            <li class="p-12 pt-0 mt-24"><a href="https://www.youtube.com/%40luzdelsur-oficial6724" target="_blank" rel="noopener"><i class="icono-color-youtube fa-brands fa-youtube font-24"></i></a></li>
+                            <li class="p-12 pt-0 mt-24"><a href="https://www.instagram.com/luzdelsuroficial/" target="_blank" rel="noopener"><i class="icono-color-instagram fa-brands fa-instagram font-24"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 order-1 order-lg-1">
+                    <h3 class="font-weight-700 font-20 text-black">Somos Luz del Sur</h3>
+                    <ul class="list-unstyled mt-16 font-16 font-weight-400">
+                        <li class="mb-16">
+                            <a href="/es/InformacionCorporativa/NuestraEmpresa" class="text-black">Nuestra empresa</a>
+                        </li>
+                        <li class="mb-16"><a href="/es/InformacionCorporativa" class="text-black">Compromiso sostenible</a></li>
+                        <li class="mb-16"><a href="/es/InformacionCorporativa/NuestraEmpresa" class="text-black">Accionistas</a></li>
+                        <li class="mb-16"><a href="/es/Inversionista" class="text-black">Inversionistas</a></li>
+                        <li class="mb-0">
+                            <a href="https://luzdelsur.hiringroom.com/jobs" target="_blank" rel="noopener" class="text-black">Trabaja con nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 order-2 order-lg-2">
+                    <h3 class="font-weight-700 font-20 text-black">Canales de atención</h3>
+                    <ul class="list-unstyled mt-16 font-16">
+                        <li class="mb-16"><a id="EnlaceModal2" class="text-black">App Luz del Sur</a></li>
+                        <li class="mb-16 "><a href="/es/Contactanos" class="text-black">Contáctanos</a></li>
+                        <li class="mb-16">
+                            <a href="/es/Sucursales" class="text-black">Sucursales y agentes de pago</a>
+                        </li>
+                        <li class="mb-16"><a href="https://tramite.luzdelsur.com.pe/seguridad/login" target="_blank" rel="noopener" id="EnlaceModal2" class="text-black">Plataforma de trámite virtual</a></li>
+                        <li class="mb-16"><a id="EnlaceModalDenuncia" class="text-black">Canales de denuncias</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 order-3 order-lg-3">
+                    <h3 class="font-weight-700 font-20 text-black">Trámites y gestiones</h3>
+                    <ul class="list-unstyled mt-16 font-16">
+                        <li class="mb-16">
+                            <a href="/es/CambioNombre/Ingreso" target="_blank" class="text-black">Cambio de nombre del titular</a>
+                        </li>
+                        <li class="mb-16">
+                            <a href="https://www.luzdelsur.com.pe/misconexiones/" target="_blank" rel="noopener" class="text-black">Nuevo medidor o conexión</a>
+                        </li>
+                        <li class="mb-16 "><a href="https://zsp1.luzdelsur.com.pe/ofvirtual/Account/RegistroReclamacion" target="_blank" rel="noopener" class="text-black">Reclamos</a></li>
+                        <li class="mb-16 "><a href="/es/PortalRequerimientos" class="text-black">Portal de estado de requerimientos</a></li>
+                        <li class="mb-16 "><a href="https://cdn.luzdelsur.com.pe/weblds/nuestraempresa/lds_tarifas.pdf" target="_blank" class="text-black">Pliego tarifario</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-12 order-3 order-lg-5 text-start">
+                    <a href="https://www.sgs.com/en/certified-clients-and-products/certified-client-directory" target="_blank">
+                        <img src="https://cdn.luzdelsur.com.pe/weblds/iso14001.png"
+                             alt="ISO 14001"
+                             class="me-2 imgResponsiveFooter"
+                             style="max-width:10%;" />
+                    </a>
+
+                    <a href="https://www.sgs.com/en/certified-clients-and-products/certified-client-directory" target="_blank">
+                        <img src="https://cdn.luzdelsur.com.pe/weblds/iso37001.png"
+                             alt="ISO 37001"
+                             class="me-2 imgResponsiveFooter"
+                             style="max-width:10%;" />
+                    </a>
+
+                    <a href="https://www.sgs.com/en/certified-clients-and-products/certified-client-directory" target="_blank">
+                        <img src="https://cdn.luzdelsur.com.pe/weblds/iso37301.png"
+                             alt="ISO 37301"
+                             class="me-2 imgResponsiveFooter"
+                             style="max-width:10%;" />
+                    </a>
+
+                    <img src="https://cdn.luzdelsur.com.pe/weblds/LogoGPTW.png"
+                         alt="GPTW"
+                         class="me-2 imgResponsiveFooter gptw"
+                         style="max-width:10%;height:113px" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="app" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-body p-32 bg-celeste-claro br-16">
+                    <p class="text-black"> Selecciona tu sistema operativo:</p>
+                    <div class="br-16 text-center pl-24 pr-24">
+
+                        <a href="https://apps.apple.com/pe/app/luz-del-sur/id1096292551" target="_blank" rel="noopener"><img src="/es/assets/img/Home/app-store.png" class="w-100 d-block logo-store m-auto"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.luzdelsur.oficinavirtual&hl=es_PE" target="_blank" rel="noopener"><img src="/es/assets/img/Home/google_play.png" class="w-100 d-block mt-12 logo-store m-auto"></a>
+                        <a href="https://appgallery.huawei.com/#/app/C102754923" target="_blank" rel="noopener"><img src="/es/assets/img/Home/app_gallery.png" class="w-100 d-block mt-12 logo-store m-auto"></a>
+
+                        <button type="button" data-dismiss="modal" class="btn br-24 pt-12 pb-12 font-16 font-weight-bold pl-sm-80 pr-sm-80 mt-24 mt-sm-20 w-100 bt-cerrar-mod m-auto" id="btn-chatear-aqui">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="denuncia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body p-20 bg-celeste-claro br-16">
+                    <p class="text-black">Puedes ingresar tu denuncia por los siguientes medios:</p>
+                    <div class="mt-2 pt-10 br-16 pl-sm-0 pl-28 pr-sm-0 pr-24">
+                        <div style="overflow: hidden; width: 100%;" class="mt-1 mb-1 pl-sm-0 pl-28">
+                            <img src="/es/assets/img/Home/telefono.png" width="35px" alt=""><a href="tel:080000795" class="text-black pl-sm-6 pl-28"> 0800-0-0795</a>
+                        </div>
+                        <div style="overflow: hidden; width: 100%;" class="mt-1 mb-1 pl-sm-0 pl-28">
+                            <img src="/es/assets/img/Home/correo.png" width="35px" alt=""><a href="mailto:lineaeticaluzdelsur@kpmg.com.ar" rel="noopener" target="_blank" class="text-black pl-sm-6 pl-28"> lineaeticaluzdelsur@kpmg.com.ar</a>
+                        </div>
+                        <div style="overflow: hidden; width: 100%;" class="mt-1 mb-1 pl-sm-0 pl-28">
+                            <img src="/es/assets/img/Home/laptop.png" width="35px" alt=""><a href="https://lineaeticaluzdelsur.lineaseticas.com" rel="noopener" target="_blank" class="text-black pl-sm-6 pl-28"> lineaeticaluzdelsur.lineaseticas.com</a>
+                        </div>
+                        <button type="button" data-dismiss="modal" class="btn br-24 pt-12 pb-12 font-16 font-weight-bold pl-sm-80 pr-sm-80 mt-24 mt-sm-20 w-100 bt-cerrar-mod m-auto" id="btn-chatear-aqui">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        var enlace = document.getElementById("EnlaceModal");
+        if (enlace != null && enlace != undefined) {
+            enlace.onclick = function () {
+                $('#app').modal('show');
+            };
+        }
+
+        var enlace2 = document.getElementById("EnlaceModal2");
+        if (enlace2 != null && enlace2 != undefined) {
+            enlace2.onclick = function () {
+                $('#app').modal('show');
+            };
+        }
+        var enlace3 = document.getElementById("EnlaceModalDenuncia");
+        if (enlace3 != null && enlace3 != undefined) {
+            enlace3.onclick = function () {
+                $('#denuncia').modal('show');
+            };
+        }
+    })
+    function PortalReqEstado()
+    {
+        Swal.fire({
+            iconHtml: '<img src="' + variableGlobalURL + '/assets/img/iconos/icono-danger.png">',
+            customClass: {
+                icon: 'no-border'
+            },
+            title: "Error",
+            text: '',
+            confirmButtonText: 'Aceptar'
+        });
+    }
+</script>
+
+    <div class="modal fade" id="modal-cookies" tabindex="-1" aria-labelledby="como-ingresar-lectura" style="z-index: 9999; display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-md" style="z-index:99;">
+            <div class="modal-content">
+
+                <div class="modal-body p-16 bg-celeste-claro br-16 font-12">
+                    <h2 class="font-20 font-weight-bold">Administre sus cookies</h2>
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestra página web y para mostrarle publicidad relevante. Administre la configuración de nuestras cookies opcionales a continuación.</p>
+                    <hr>
+                    <div class="border p-8">
+                        <h3 class="font-16">Cookies técnicas y de seguridad</h3>
+                        <p>Estas cookies son imprescindibles, ya que le permiten navegar por nuestra página web. Esta categoría no se puede desactivar.</p>
+                    </div>
+
+                    <div class="border p-8 mt-12">
+                        <h3 class="font-16">Cookies de analítica</h3>
+                        <p>Estas cookies permiten obtener estadísticas de uso de la web.</p>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <label class="switch">
+                                    <input class="act_cookies" data-type="analitycs" id="sel_cookies_analitycs" type="checkbox" checked="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="aceptar_seleccion" class="btn-cookies border-0 w-100 font-12 mt-8" data-dismiss="modal" onclick="aceptarPolitica()">Aceptar y continuar</button>
+                    <button id="rechazar_todo" class="btn-cookies border-0 w-100 font-12 mt-8" data-dismiss="modal" onclick="rechazarPolitica()">Rechazar todo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="politicas-cookies" tabindex="-1" aria-labelledby="como-ingresar-lectura" style="z-index: 9999; display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="z-index:99;">
+            <div class="modal-content p-20 bg-celeste-claro">
+                <h1 class="font-20 azul font-weight-600 text-center">POLÍTICA DE COOKIES</h1>
+                <p class="font-12">
+                    Luz del Sur S.A.A. (en adelante, “Luz del Sur”), informa a sus usuarios que esta página web y/u oficina virtual (en adelante, la “Página Web”) emplea cookies para el mejor funcionamiento de la misma, para recordar sus preferencias y para ayudarlos a obtener la información correcta. De igual manera, queremos informarte sobre las cookies que utilizamos en nuestra página web y cómo tratamos de forma segura cualquier información relacionada con tu navegación.<br><br>
+
+                    El uso de cookies, tanto propias como de terceros, nos ayuda a mejorar nuestro servicio y brindarte una mejor experiencia. Asimismo, podemos usar cookies para mantener, y a veces rastrear, información sobre usted.<br><br>
+
+                    <b>¿Qué son las cookies?</b><br><br>
+
+                    Las cookies son pequeños archivos de texto con información sobre tus acciones de navegación y no dañan tu sistema. Tu navegador web (como Internet Explorer, Mozilla Firefox, Safari o Google Chrome) envía estas cookies al sitio web o aplicación en cada visita posterior para que puedan reconocerlo y recordar cosas como detalles personalizados o preferencias del usuario. Cada vez que ingresas a un sitio web, éstas se almacenan en tu computador o dispositivo móvil. Estas cookies ahora contienen información sobre tu visita, por ejemplo, tu preferencia de idioma. Cuando vuelvas a ingresar al sitio web, las cookies permitirán que se te muestre información relevante que mejore tu experiencia de navegación. Puedes restablecer tu navegador para rechazar cualquier cookie o para alertarte cuando se envía una cookie.<br><br>
+
+                    <b class="font-12">¿Por qué son importantes?</b><br>
+
+                    Las cookies nos permiten:
+                </p>
+                <ul class="font-12">
+                    <li>Proteger tus datos, la seguridad de tu navegación y tu cuenta al almacenarlos directamente en tus dispositivos.</li>
+                    <li>Conocer y entender cómo interactúas con nuestros productos y servicios, y así poder mejorar tu experiencia en tus futuras visitas.</li>
+                    <li>En algunos casos nos ayudan a identificar y resolver errores.</li>
+                </ul>
+                <p class="font-12">
+                    Para mejorar tu experiencia y mejorar nuestro servicio, también utilizamos cookies con fines de administración del sistema y análisis de nuestra Página Web. Esto nos da información sobre el número de visitantes a diferentes partes de nuestra Página Web.<br><br>
+
+                    <b>¿Puedo administrar las cookies?</b><br>
+
+                    La mayoría de navegadores están configurados para aceptar las cookies por defecto. Sin embargo, cuentan con configuraciones de seguridad que te permiten evitar su instalación en tu computador o dispositivo móvil. Ten en cuenta que, si decides rechazar las cookies, se podrían bloquear algunas funcionalidades de la Página Web o limitarte el acceso a ciertos contenidos.<br>
+
+                    Puedes desactivar las cookies de acuerdo al navegador que utilices. Cada navegador es diferente, así que consulta el menú 'Ayuda' de tu navegador en particular (o el manual del teléfono de tu teléfono móvil) para aprender cómo cambiar sus preferencias de cookies.<br><br>
+
+                    La mayoría de los navegadores modernos te permitirán:
+                </p>
+                <ul class="font-12">
+                    <li>Ver qué cookies tiene y eliminarlas de forma individual.</li>
+                    <li>Bloquear cookies de terceros.</li>
+                    <li>Bloquear cookies de sitios web particulares.</li>
+                    <li>Bloquear todas las cookies para que no se configuren.</li>
+                    <li>Eliminar todas las cookies al cerrar el navegador.</li>
+                </ul>
+                <p class="font-12">
+                    Debes tener en cuenta que cualquier preferencia se perderá si eliminas las cookies. Esto incluye dónde has optado por no recibir cookies, ya que esto requiere que se establezca una cookie de exclusión voluntaria. Además, si bloqueas las cookies por completo, muchos sitios web no funcionarán correctamente y algunas funciones de estos sitios web no funcionarán en absoluto.<br><br>
+
+                    <b>¿Qué tipo de cookies usamos?</b><br><br>
+
+                    Luz del Sur utiliza los siguientes tipos de cookies:<br>
+                </p>
+                <ul class="font-12">
+                    <li>
+                        <b>Cookies de analítica</b><br>
+                        Google analytics (Google): El cual nos permite obtener estadísticas de uso de la web.<br>
+                        Google maps (Google): El cual nos permite la visualización de mapa dentro de la web.
+                    </li>
+                    <li>
+                        <b>Cookies técnicas</b><br>
+                        Cookie Sesión (Propia): El cual nos permite identificar la sesión de visita a la web
+                    </li>
+                    <li>
+                        <b>Cookies de seguridad</b><br>
+                        Cookie Prevención XSRF (Propia): El cual evita falsificación de petición en sitios cruzados
+                    </li>
+                </ul>
+                <p class="font-12">
+                    <b>Consentimiento</b><br><br>
+
+                    Luz del Sur pueden tratar la información recopilada a través de cookies, siempre que el usuario brinde su consentimiento al ingresar a cualquiera de nuestras Páginas Web, salvo en los casos, de ser el caso, en que las cookies sean necesarias para la operatividad y navegación de las mismas.<br><br>
+
+                    En caso de que el usuario preste su consentimiento, Luz del Sur podrá utilizar cookies que permitan obtener información acerca de sus preferencias, con el fin de personalizar nuestra Página Web de acuerdo con sus intereses.<br><br>
+
+                    Por favor tenga en cuenta que no podemos ser responsables del contenido de los sitios web externos.<br><br>
+
+                    <b>Modificaciones</b><br><br>
+
+                    La presente Política ha sido actualizada el 20 de diciembre del 2023 y podrá ser modificada por Luz del Sur. Cualquier cambio o modificación será publicado en nuestros portales web: https://zsp1.luzdelsur.com.pe/ofvirtual y/o https://www.luzdelsur.com.pe<br><br>
+
+                    <b>Disclaimer de Cookies</b><br><br>
+
+                    Las cookies de esta Página Web, que son pequeños archivos que se almacenan en las computadoras, nos permiten recordar características o preferencias de la navegación que tienes en Nuestra Página Web. Gracias a esto podemos personalizar los ingresos a la Página Web en futuras visitas, hacer más segura la navegación y conocer tus preferencias para ofrecerte información de tu interés. Puedes aceptar o rechazar la instalación de cookies o suprimirlos una vez que hayas finalizado la navegación en nuestra Página Web. Luz del Sur no se responsabiliza de que la desactivación de las cookies pueda impedir el buen funcionamiento de nuestra Página Web.
+
+                </p>
+
+                <div style="text-align:center;">
+                    <a href="#" data-dismiss="modal" class="btn-cookies font-12">Cerrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cnt_cookies" class="aviso-cookie activo">
+        <div id="lds_cookies" class="font-14">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 col-sm-12">
+                    Esta web utiliza cookies para mejorar su experiencia. Si continúas navegando consideramos que aceptas su uso.
+                    <a id="#" class="btn-cookies cookie-desktop ml-20 cookie-aceptar" style="cursor:pointer;border:2px solid #263184;border-radius:8px" onclick="aceptarPolitica()">Aceptar cookies</a>
+                    <a id="#" data-toggle="modal" data-target="#modal-cookies" class="cookie-desktop ml-20 btn-outline-azul cookie-config" style="cursor:pointer;color:#263184 ;padding:8px;border-radius:8px">Configurar cookies</a>
+                </div>
+                <div class="col-sm-12 w-sm-100 mt-sm-20 cookie-mobile justify-content-center" style="display:none">
+                    <a id="#" class="btn-cookies" style="cursor:pointer;border:2px solid #263184;border-radius:8px" onclick="aceptarPolitica()">Aceptar cookies</a>
+                    <a id="#" data-toggle="modal" data-target="#modal-cookies" class="ml-20 btn-outline-azul cookie-config" style="cursor:pointer;color:#263184 ;padding:8px;border-radius:8px">Configurar cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    $(document).ready(function () {
+
+        var dataLayer = window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: 'page_view',
+            TipoEvento: 'visualización',
+            TipoElemento: 'Page',
+            Flujo: 'gate',
+            TipoAcceso: undefined,
+            Zona: 'Home',
+            SubZona: undefined,
+            CTA: undefined,
+            page_title: 'Home'
+        });
+
+        if (muestraMensajeHome.toLowerCase() === 'true') {
+            var bannerCookies = document.getElementById("consent-wrapper");
+            // si el banner de cookies NO está visible
+            if (!bannerCookies || bannerCookies.style.display === "none" || bannerCookies.style.display === "") {
+                $("#modalMensajeInicio").modal("show");
+            }
+        }
+
+        if (window.location.hash == '#login') {
+            $('#login_info_guardada').modal('show');
+        }
+
+        dataLayer = [];
+
+        if (!localStorage.getItem('cookies-aceptadas')) {
+            cnt_cookies.classList.add('activo');
+        } else {
+            cnt_cookies.classList.remove('activo');
+            var cookies_ceptadas = localStorage.getItem('cookies-aceptadas');
+            if (cookies_ceptadas == true) {
+                dataLayer.push({
+                    'event': 'cookies-aceptadas'
+                });
+            } else {
+                return false;
+            }
+        }
+    });
+
+    function trackClick(event, eventLabel) {
+        var dataLayer = window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'event': 'ga-event-home',
+            'eventCategory': 'home',
+            'eventAction': 'clic',
+            'eventLabel': eventLabel
+        });
+    }
+
+    function rechazarPolitica() {
+        const cnt_cookies = document.getElementById('cnt_cookies');
+        cnt_cookies.classList.remove('activo');
+        localStorage.setItem('cookies-aceptadas', false);
+        $('#modal-cookies').modal('hide');
+    }
+
+    function aceptarPolitica() {
+        const cnt_cookies = document.getElementById('cnt_cookies');
+        cnt_cookies.classList.remove('activo');
+        localStorage.setItem('cookies-aceptadas', $('#sel_cookies_analitycs').is(":checked"));
+        $('#modal-cookies').modal('hide');
+    }
+
+    function cerrarPolitica() {
+        const cnt_cookies = document.getElementById('cnt_cookies');
+        cnt_cookies.classList.remove('activo');
+    }
+
+    function openModal() {
+        document.getElementById('txtCorreo').value = '';
+        document.getElementById('txtContrasenia').value = '';
+        $("#login_info_guardada2").modal("show");
+    }
+
+    function sendEventButtons(SubZona, CTA) {
+        var dataLayer = window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: 'seleccion_botones',
+            TipoEvento: 'Interacción',
+            TipoElemento: 'Button',
+            Flujo: 'gate',
+            TipoAcceso: undefined,
+            Zona: 'Home',
+            SubZona: SubZona,
+            CTA: CTA,
+            page_title: 'Home'
+        });
+    }
+
+    function sendEventLogin({ evento, estado, user_id }) {
+        var dataLayer = window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: evento,
+            Login_Status: estado,
+            user_id: user_id,
+            Version: '1.0',
+            Plataforma: 'Web'
+        });
+    }
+</script>
+<script>
+    var flujo = "Inicio";
+</script>
+
+<script type="text/javascript" src="/es/Scripts/Modulos/Login/Login.js"></script>
+<script type="text/javascript">
+    variablesQualtricsHTML();
+    document.addEventListener("DOMContentLoaded", function () {
+        const thresholds = [50, 100];
+        const triggered = new Set();
+
+        const sendScrollEvent = (percent) => {
+            if (!triggered.has(percent)) {
+                triggered.add(percent);
+
+                var porcentaje = `${percent}%`;
+                var dataLayer = window.dataLayer = window.dataLayer || [];
+                dataLayer.push({
+                    event: 'Scroll',
+                    TipoEvento: 'visualización',
+                    TipoElemento: 'Scroll',
+                    Flujo: 'gate',
+                    TipoAcceso: undefined,
+                    Zona: 'Home',
+                    SubZona: undefined,
+                    CTA: porcentaje,
+                    page_title: 'Home'
+                });
+
+            }
+        };
+
+        const checkScroll = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const scrollPercent = Math.ceil(((scrollTop + winHeight) / docHeight) * 100);
+
+            thresholds.forEach(threshold => {
+                if (scrollPercent >= threshold) {
+                    sendScrollEvent(threshold);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('resize', checkScroll);
+        checkScroll();
+    });
+</script>
+
+<script type='text/javascript'>
+    // Script para eliminar espacios de ancho cero (U+FEFF) en el DOM
+    document.addEventListener("DOMContentLoaded", function () {
+        document.body.innerHTML = document.body.innerHTML.replace(/\uFEFF/g, '');
+    });
+
+    let tipoModal =1;
+
+    $("#btnHacerloOtroMomento").on("click", function () {
+
+        $(".modal").modal("hide");
+
+        if (tipoModal === 1) {
+            $("#login_info_guardada").modal("show");
+        } else if (tipoModal === 2) {
+            $("#login_info_guardada_empresa").modal("show");
+        }
+    });
+</script>
+    <style>
+    /* --- ANIMACIONES --- */
+    @keyframes simpleFadeInOverlay {
+        from{
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes subtleSlideUpBanner {
+        from{
+            opacity: 0;
+            transform: translate(-50%, 20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    @keyframes snappyFadeInModal {
+        from{
+            opacity: 0;
+            transform: translate(-50%, calc(-50% + 20px));
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    #consent-wrapper {
+        position: fixed;
+        inset: 0;
+        z-index: 20000000000;
+        display: none;
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        animation: simpleFadeInOverlay 0.6s linear forwards;
+    }
+
+    #banner-inicial {
+        background: #fcfcfc !important;
+        border-radius: 8px;
+        padding: 20px 30px;
+        max-width: 946px;
+        width: 95%;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        height: 168px;
+        animation: subtleSlideUpBanner 0.4s ease-out forwards;
+    }
+
+    .banner-text-content {
+        flex: 1;
+    }
+
+    .actions-column {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        min-width: 200px;
+    }
+
+    #modal-config {
+        background: #F0F8FD !important;
+        border-radius: 8px;
+        padding: 32px;
+        max-width: 480px;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        animation: snappyFadeInModal 0.3s ease-out forwards;
+    }
+
+    .cookie-option-card {
+        background: #F0F8FD;
+        border: 1px solid #D4D4D4;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .option-text {
+        flex: 1;
+    }
+
+    .txt-grande {
+        font-size: 18px;
+        font-weight: 600;
+        color: #212121;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .txt-normal {
+        font-size: 14px;
+        font-weight: 400;
+        color: #212121;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .txt-pequeno {
+        font-size: 12px;
+        font-weight: 400;
+        color: #212121;
+    }
+
+    .modal-actions-full {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .btn-modal-azul {
+        background-color: #263184 !important;
+        color: white !important;
+        border: 2px solid #263184 !important;
+        padding: 10px 24px;
+        border-radius: 40px !important;
+        font-weight: 700;
+        font-size: 17px;
+        cursor: pointer;
+        width: 100%;
+        height: 48px;
+    }
+
+        .btn-modal-azul:hover {
+            background-color: #FCC330 !important;
+            color: white !important;
+            border: 2px solid #FCC330 !important;
+            padding: 10px 24px;
+            border-radius: 40px !important;
+            font-weight: 700;
+            font-size: 17px;
+            cursor: pointer;
+            width: 100%;
+            height: 48px;
+        }
+
+    .btn-modal-outline {
+        background-color: transparent !important;
+        color: #263184 !important;
+        border: 2px solid #263184 !important;
+        padding: 10px 24px;
+        border-radius: 40px !important;
+        font-weight: 700;
+        font-size: 17px;
+        cursor: pointer;
+        width: 100%;
+        height: 48px;
+    }
+
+        .btn-modal-outline:hover {
+            background-color: #263184 !important;
+            color: white !important;
+            border: 2px solid #263184 !important;
+            padding: 10px 24px;
+            border-radius: 40px !important;
+            font-weight: 700;
+            font-size: 17px;
+            cursor: pointer;
+            width: 100%;
+            height: 48px;
+        }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .1s;
+        border-radius: 24px;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+    .btn-lds-azul {
+        background-color: #263184 !important;
+        color: white !important;
+        border-radius: 40px !important;
+        font-weight: 700;
+        font-size: 17px;
+        height: 48px;
+        width: 100%;
+        border: 2px solid #263184 !important;
+        cursor: pointer;
+    }
+
+    .btn-lds-outline {
+        background-color: transparent !important;
+        color: #263184 !important;
+        border: 2px solid #263184 !important;
+        border-radius: 40px !important;
+        font-weight: 700;
+        font-size: 17px;
+        height: 48px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .btn-lds-azul:hover {
+        background-color: #FCC330 !important;
+        color: #fff !important;
+        border: 2px solid #FCC330 !important;
+    }
+
+    .btn-lds-outline:hover {
+        background-color: #263184 !important;
+        color: white !important;
+    }
+
+    @media (max-width: 768px) {
+        @keyframes hojaSubiendo {
+            0% {
+                transform: translate(-50%, 100%);
+            }
+
+            100% {
+                transform: translate(-50%, 0);
+            }
+        }
+
+        #consent-wrapper {
+            overflow: hidden;
+            animation: none !important;
+            opacity: 1 !important;
+        }
+
+        #banner-inicial {
+            flex-direction: column;
+            height: auto;
+            padding: 24px;
+            bottom: 0;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            gap: 20px;
+            background-color: #fcfcfc !important;
+            opacity: 1 !important;
+            animation: hojaSubiendo 0.4s ease-out forwards !important;
+        }
+
+        .banner-text-content {
+            text-align: left;
+            width: 100%;
+        }
+
+        .actions-column {
+            width: 100%;
+            gap: 12px;
+        }
+
+        .btn-lds-azul, .btn-lds-outline {
+            width: 100% !important;
+        }
+    }
+</style>
+
+<div id="consent-wrapper">
+    <div id="banner-inicial">
+        <div class="banner-text-content">
+            <span class="txt-grande" style="font-size:20px !important;">¿Nos ayudas a mejorar tu experiencia?</span>
+            <p class="txt-normal" style="font-size:16px !important;">Queremos brindarte un portal web más eficiente y personalizado. Al aceptar nuestras cookies, nos permites optimizar el rendimiento y mostrarte información relevante según tus necesidades.</p>
+        </div>
+        <div class="actions-column h-100" style="    justify-content: space-between;">
+            <button id="btn-accept-all" class="btn-lds-azul">Aceptar cookies</button>
+            <button id="btn-open-modal" class="btn-lds-outline">Configurar cookies</button>
+        </div>
+    </div>
+
+    <div id="modal-config" style="display:none;">
+        <span class="txt-grande">Configurar cookies</span>
+        <p class="txt-normal mb-2">
+            Utilizamos cookies para mejorar tu experiencia en nuestra página web y para mostrarte información relevante. Administra la configuración de nuestras cookies opcionales a continuación.
+        </p>
+
+        <div class="cookie-option-card">
+            <div class="option-text">
+                <span class="txt-normal" style="font-weight: 600; color: #212121;">Cookies técnicas y de seguridad</span>
+                <p class="txt-pequeno">Estas cookies son imprescindibles, ya que te permiten navegar por nuestra página web. Esta categoría no se puede desactivar.</p>
+            </div>
+        </div>
+
+        <div class="cookie-option-card flex-column">
+            <div class="option-text">
+                <span class="txt-normal" style="font-weight: 600; color: #212121;">Cookies de analítica</span>
+                <p class="txt-pequeno mb-0">Nos ayudan a medir cuántas personas nos visitan y qué secciones son las más útiles para mejorar el servicio.</p>
+            </div>
+            <div class="d-flex w-100" style="justify-content:flex-end">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-analytics" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="cookie-option-card flex-column">
+            <div class="option-text">
+                <span class="txt-normal" style="font-weight: 600; color: #212121;">Cookies de marketing</span>
+                <p class="txt-pequeno mb-0">Permiten que te mostremos información o promociones que realmente te interesen.</p>
+            </div>
+            <div class="d-flex w-100" style="justify-content:flex-end">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-marketing" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="modal-actions-full">
+            <button id="btn-save-settings" class="btn-modal-azul">Aceptar y continuar</button>
+            <button id="btn-reject-all" class="btn-modal-outline">Rechazar todo</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var wrapper = document.getElementById('consent-wrapper');
+            var bannerInic = document.getElementById('banner-inicial');
+            var modalConf = document.getElementById('modal-config');
+            var cookieData = getCookie("consent_status");
+
+            let _estado="";
+
+            if (!cookieData) {
+                wrapper.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            } else {
+                try {
+                    var data = JSON.parse(decodeURIComponent(cookieData));
+                    gtag('consent', 'update', {
+                        'analytics_storage': data.analytics,
+                        'ad_storage': data.marketing,
+                        'ad_user_data': data.marketing,
+                        'ad_personalization': data.marketing
+                    });
+                } catch (e) {
+                    wrapper.style.display = 'flex';
+                }
+            }
+
+            // Clic fuera del modal retorna al banner
+            wrapper.onclick = function(e) {
+                if (e.target === wrapper && modalConf.style.display === 'block') {
+                    modalConf.style.display = 'none';
+                    bannerInic.style.display = 'flex';
+                }
+            };
+
+           document.getElementById('btn-open-modal').onclick = function() {
+                document.getElementById('toggle-analytics').checked = true;
+                document.getElementById('toggle-marketing').checked = true;
+
+                bannerInic.style.display = 'none';
+                modalConf.style.display = 'block';
+            };
+
+            document.getElementById('btn-accept-all').onclick = function() {
+                _estado="granted";
+                procesarConsentimiento('granted', 'granted');
+            };
+
+            document.getElementById('btn-reject-all').onclick = function() {
+                _estado="denied";
+                procesarConsentimiento('denied', 'denied');
+            };
+
+            document.getElementById('btn-save-settings').onclick = function() {
+                _estado="configuration";
+                var aStatus = document.getElementById('toggle-analytics').checked ? 'granted' : 'denied';
+                var mStatus = document.getElementById('toggle-marketing').checked ? 'granted' : 'denied';
+                procesarConsentimiento(aStatus, mStatus);
+            };
+
+            function procesarConsentimiento(aStatus, mStatus) {
+                gtag('consent', 'update', {
+                    'analytics_storage': aStatus,
+                    'ad_storage': mStatus,
+                    'ad_user_data': mStatus,
+                    'ad_personalization': mStatus
+                });
+
+                var cookieVal = JSON.stringify({ analytics: aStatus, marketing: mStatus });
+                document.cookie = "consent_status=" + encodeURIComponent(cookieVal) + ";max-age=31536000;path=/";
+
+                if(_estado=="granted")
+                {
+                    window.dataLayer.push({
+                        'event': 'cookie_interaction',
+                        'cookie_action': 'accept_all',
+                        'cookie_type': 'banner',
+                        'consent_analytics': aStatus,
+                        'consent_marketing': mStatus
+                    });
+
+                    console.log("event:cookie_interaction");
+                    console.log("cookie_action:accept_all");
+                    console.log("cookie_type:banner");
+                    console.log("consent_analytics:",aStatus);
+                    console.log("consent_marketing:",mStatus);
+
+                }
+                else if(_estado=="denied")
+                {
+                    window.dataLayer.push({
+                        'event': 'cookie_interaction',
+                        'cookie_action': 'reject_all',
+                        'cookie_type': 'modal',
+                        'consent_analytics': aStatus,
+                        'consent_marketing': mStatus
+                    });
+
+                    console.log("event:cookie_interaction");
+                    console.log("cookie_action:reject_all");
+                    console.log("cookie_type:modal");
+                    console.log("consent_analytics:",aStatus);
+                    console.log("consent_marketing:",mStatus);
+                }
+                else
+                {
+                    window.dataLayer.push({
+                        'event': 'cookie_interaction',
+                        'cookie_action': 'save_settings',
+                        'cookie_type': 'modal',
+                        'consent_analytics': aStatus,
+                        'consent_marketing': mStatus
+                    });
+
+                    console.log("event:cookie_interaction");
+                    console.log("cookie_action:save_settings");
+                    console.log("cookie_type:modal");
+                    console.log("consent_analytics:",aStatus);
+                    console.log("consent_marketing:",mStatus);
+                }
+
+                // window.dataLayer.push({
+                //     'event': 'cookie_interaction',
+                //     'cookie_action': 'save_settings',
+                //     'consent_analytics': aStatus,
+                //     'consent_marketing': mStatus
+                // });
+
+                wrapper.style.display = 'none';
+                document.body.style.overflow = 'visible';
+
+
+                if (typeof muestraMensajeInicioCorporativa !== "undefined" && muestraMensajeInicioCorporativa.toLowerCase() === "true" && window.location.pathname==="/InformacionCorporativa") {
+                    setTimeout(function () {
+                        $("#modalMensajeInicio").modal("show");
+                    }, 300);
+                }
+
+                if (typeof muestraMensajeHome !== "undefined" && muestraMensajeHome.toLowerCase() === "true" && (window.location.pathname==="/" || window.location.pathname==="/Home")) {
+                    setTimeout(function () {
+                        $("#modalMensajeInicio").modal("show");
+                    }, 300);
+                }
+            }
+        });
+    })();
+</script>
+    <!-- MODAL: VALIDACIÓN TIPO PROP (Grandes Clientes) -->
+    <div b-dz3jthkxle class="modal fade" id="modal_validacion_prop" tabindex="-1" aria-labelledby="modal_validacion_prop_label" aria-hidden="true" style="display: none;">
+        <div b-dz3jthkxle class="modal-dialog modal-dialog-centered modal-xs" role="document">
+            <div b-dz3jthkxle class="modal-content">
+                <div b-dz3jthkxle class="modal-body p-28" style="background: #F0F8FD !important;border-radius: 0.357rem;">
+                    <div b-dz3jthkxle class="mb-24">
+                        <h1 b-dz3jthkxle class="font-16">Estimado cliente:</h1>
+                        <p b-dz3jthkxle class="font-14">
+                            Para consultas sobre el suministro en mención, favor contactarse con su ejecutivo de Grandes Clientes al 271-9000 anexo 6176 / 6207 o al correo gclientes@luzdelsur.com.pe <br b-dz3jthkxle />
+                            Gracias por su comprensión.
+                        </p>
+                    </div>
+                    <div b-dz3jthkxle class="text-center">
+                        <button b-dz3jthkxle type="button" data-dismiss="modal" class="btn btn-outline-azul br-28 azul" style="width: -webkit-fill-available;" id="btn_cerrar_validacion_prop">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div b-dz3jthkxle class="modal fade" id="modal_validacion_fonoluz" tabindex="-1" aria-labelledby="modal_validacion_fonoluz" aria-hidden="true" style="display: none;">
+        <div b-dz3jthkxle class="modal-dialog modal-dialog-centered modal-xs" role="document">
+            <div b-dz3jthkxle class="modal-content">
+                <div b-dz3jthkxle class="modal-body p-28" style="background: #F0F8FD !important;border-radius: 0.357rem;">
+                    <div b-dz3jthkxle class="mb-24">
+                        <h1 b-dz3jthkxle class="font-16">Estimado cliente:</h1>
+                        <p b-dz3jthkxle class="font-14">
+                            Para consultas sobre el suministro en mención, favor contactarse a Fonoluz al  617-5000.<br b-dz3jthkxle />
+                            Gracias por su comprensión.
+                        </p>
+                    </div>
+                    <div b-dz3jthkxle class="text-center">
+                        <button b-dz3jthkxle type="button" data-dismiss="modal" class="btn btn-outline-azul br-28 azul" style="width: -webkit-fill-available;" id="btn_cerrar_validacion_prop">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+<script type='text/javascript'>
+    (function () {
+        var g = function (e, h, f, g) {
+            this.get = function (a) { for (var a = a + "=", c = document.cookie.split(";"), b = 0, e = c.length; b < e; b++) { for (var d = c[b]; " " == d.charAt(0);) d = d.substring(1, d.length); if (0 == d.indexOf(a)) return d.substring(a.length, d.length) } return null };
+            this.set = function (a, c) { var b = "", b = new Date; b.setTime(b.getTime() + 6048E5); b = "; expires=" + b.toGMTString(); document.cookie = a + "=" + c + b + "; path=/; " };
+            this.check = function () {
+                var a = this.get(f); if (a) a = a.split(":"); else if (100 != e) "v" == h && (e = Math.random() >= e / 100 ? 0 : 100), a = [h, e, 0], this.set(f, a.join(":")); else return !0; var c = a[1]; if (100 == c) return !0; switch (a[0]) {
+                    case "v": return !1; case "r": return
+                        c = a[2] % Math.floor(100 / c), a[2]++, this.set(f, a.join(":")), !c
+                } return !0
+            };
+            this.go = function () { if (this.check()) { var a = document.createElement("script"); a.type = "text/javascript"; a.src = g; document.body && document.body.appendChild(a) } };
+            this.start = function () { var t = this; "complete" !== document.readyState ? window.addEventListener ? window.addEventListener("load", function () { t.go() }, !1) : window.attachEvent && window.attachEvent("onload", function () { t.go() }) : t.go() };
+        };
+        try { (new g(100, "r", "QSI_S_ZN_8BcUxvzi3pSwl4a", "https://zn8bcuxvzi3pswl4a-luzdelsur.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_8BcUxvzi3pSwl4a")).start() } catch (i) { }
+    })();
+</script>
+<div b-dz3jthkxle id='ZN_8BcUxvzi3pSwl4a'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END WEBSITE FEEDBACK SNIPPET-->
+
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+<script type='text/javascript'>
+    if (typeof QSI === "undefined") { QSI = {}; }
+    QSI.config = {
+        externalReference: QSI_SUMINISTRO 
+    };
+
+    (function () {
+        var g = function (g) {
+
+            this.go = function () { var a = document.createElement("script"); a.type = "text/javascript"; a.src = g; document.body && document.body.appendChild(a) };
+
+            this.start = function () { var t = this; "complete" !== document.readyState ? window.addEventListener ? window.addEventListener("load", function () { t.go() }, !1) : window.attachEvent && window.attachEvent("onload", function () { t.go() }) : t.go() };
+        };
+
+        try { (new g("https://zndqrvpglca6ts48h-luzdelsur.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_DqrVPglCa6TS48h")).start() } catch (i) { }
+    })();
+
+</script>
+<div b-dz3jthkxle id='ZN_DqrVPglCa6TS48h'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END WEBSITE FEEDBACK SNIPPET-->
+
+<script>
+
+    var variableGlobalURL = "https://www.luzdelsur.pe/es";
+    var muestraMensajeInicioCorporativa = "false";
+    var muestraMensajeHome = "false";
+    var muestraMensajeInfoFise = "true";
+    var rutaPrincipal = "/es";
+    var QSIDelay1 = "2000";
+    var QSIDelay2 = "5000";
+</script>
+<script src="/es/Scripts/chatweb.js"></script>
+<script src="/es/Scripts/MetodosGenericos.js"></script>

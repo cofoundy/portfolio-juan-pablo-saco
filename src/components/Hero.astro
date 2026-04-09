@@ -15,21 +15,31 @@ import { siteConfig } from "../config";
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <!-- Main Hero Content -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-      <!-- Avatar (SVG Initials) -->
+      <!-- Avatar (Profile Image or SVG Initials fallback) -->
       <div class="order-2 md:order-1 flex justify-center md:justify-start">
         <div class="relative hero-photo">
           <div
             class="absolute -inset-3 rounded-2xl opacity-20"
             style={`background-color: ${siteConfig.accentColor}`}
           ></div>
-          <div
-            class="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl shadow-xl flex items-center justify-center"
-            style={`background-color: ${siteConfig.accentColor}; border: 4px solid ${siteConfig.highlightColor}`}
-          >
-            <span class="text-white font-bold select-none" style="font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(4rem, 8vw, 7rem);">
-              JP
-            </span>
-          </div>
+          {siteConfig.profileImage ? (
+            <img
+              src={siteConfig.profileImage}
+              alt={siteConfig.name}
+              class="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl shadow-xl object-cover"
+              style={`border: 4px solid ${siteConfig.highlightColor}`}
+              loading="eager"
+            />
+          ) : (
+            <div
+              class="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl shadow-xl flex items-center justify-center"
+              style={`background-color: ${siteConfig.accentColor}; border: 4px solid ${siteConfig.highlightColor}`}
+            >
+              <span class="text-white font-bold select-none" style="font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(4rem, 8vw, 7rem);">
+                {siteConfig.name.split(' ').map(w => w[0]).slice(0, 2).join('')}
+              </span>
+            </div>
+          )}
         </div>
       </div>
 
