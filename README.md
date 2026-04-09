@@ -2,7 +2,7 @@
 
 Portafolio profesional.
 
-**Live:** *Se actualizará después del deploy*
+**Live:** [juan-pablo-saco.cofoundy.dev](https://juan-pablo-saco.cofoundy.dev/)
 
 ## Tech Stack
 
